@@ -5,26 +5,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \zihao{-4}
 %---------------------------------------
-\chapter{关于模板的一些说明}%\label{chpt:1}
+\chapter{绪论}%\label{chpt:1}
 %---------------------------------------
-本模版\glossary{模板}是为{\university\school}本科毕业生撰写毕业论文而设计的，版面尺寸按照{\university}的论文撰写要求选取~\cite{moban_fujian}。模板的第一版是
-2006年完成的，经过多年的使用、 改进，最终发展成目前的版本。
+矩阵作为数学领域里一颗璀璨的明星，其独特的性质连接着代数运算、集合变化与实际应用等诸多领域，矩阵自发现以来就吸引着无数学者的目光。而正定矩阵作为实对称矩阵的特殊子类，它优越的代数性质以及明确的几何意义为解决数学问题提供了强有力的工具。因此正定矩阵在高等代数中占有十分重要的地位，是高等代数的热门议题之一。
 
 模板的最近一次修改是2024年8月。 这次修改的变动比较大，首先 \university 对论文的结构、格式和要求进行了比较大的改动~\cite{moban_wenjian,moban_fujian}；其次，为了适应更多的使用者，本次模板的编译采用的是 XeLatex，不是以前的 PdfLatex。
 
-第一次使用本模版时，请先阅读~\ref{subsec:1}节；%如果安装\CTeX{}\index{\CTeX} 有问题，请阅读~\ref{sec:versionSelect}节；
-如果对数学公式、符号或定义、定理、证明等各种命令环境不熟悉，请阅读第~\ref{sec:2two}
-节；如果对表格或图形的\index{图形插入}插入不熟悉，请阅读第~\ref{sec:ssss} 节；如果对\index{交叉引用}交叉引用不熟悉，请阅读第~\ref{sec_si4}节。 如果想了解在~\LaTeX 中\index{程序引入}引入程序代码，如
-~{\tt Matlab}\index{Matlab}，{\tt Mathematica}\index{Mathematica}, {\tt Python}\index{Python}，{\tt R}\index{R} 和~{\tt C/C++}\index{C/C++} 等的代码，请阅读第~\ref{sec:codeinludsion}节, 并分别参考附录~\ref{appendix:A}、\ref{appendix:B}、\ref{appendix:E}、\ref{appendix:C}、\ref{appendix:D} 中的实例. 
-\section{模板的构成}\label{subsec:1}
+
+\section{模板的构成}\label{subsec:1}  %1.1
 本模板由若干文件组成，所有文件都存放在一个主文件夹\index{文件夹}里。为了使用和管理方便，在主文件夹中又分了七个子文件夹：{\tt preample, codes, tables，declaration，zhengwen, fujian, wenxian}，其中~{\tt preample\index{文件夹!preample}, tables\index{文件夹!table}, declaration\index{文件夹!declaration}} 中的文件一般不用管。子文件夹~{\tt codes} 中放有一些制作本说明时的附件所用的一些代码文件，如果不需要可以删除。
 %而~{\tt codes\index{文件夹!codes}} 在熟悉模板后可以删除。文件夹~{\tt fujian\index{文件夹!fujian}} 包含中英文摘要及附录，文件夹~{\tt declaration\index{文件夹!declaration}} 中是独创性声明，而文件夹~{\tt wenxian\index{文件夹!wenxian}} 则包含一个参考文献列表文件。模板由主文件~{\tt mytemplate.tex\index{mytemplate.tex}} 及五类子文件构成：
-\begin{description}
+\begin{description} %术语解释
   \item[主文件~mytemplate:] 论文的编译一般通过主文件进行。学生的基本信息，如姓名，学号，论文题目等，都在主文件上输入。主文件名可根据自己的需求改动。
   \item[文件夹~codes:]\label{item:codes} 文件夹中包含几个程序代码。如果使用者自己没有代码，可以将其删除。
   \item[文件夹~zhengwen:] 文件夹中包含五个文件，分别对应五章。使用者可以根据自己论文的实际章数来增加或减少这里的文件数，同时录入自己论文相应章节的内容。
   \item[文件夹~fujian:] 文件夹中包含以下几个文件：
-  \begin{enumerate}
+  \begin{enumerate} %编号，例如（1）、（2）
   	\item {\tt abstract.tex\index{abstract.tex}}，这是论文的摘要。
   	\item {\tt thanks.tex\index{thanks.tex}}，这是论文的致谢词部分。
   	\item {\tt fulu\index{文件夹!fulu.tex}}, 这是论文附录的引入文件。使用者如果没有附录，那就将附录文件~{\tt fulu}删除。
@@ -74,8 +70,13 @@
 %\end{enumerate}
 %总之第~\ref{item:head} 类和第~\ref{item:miscellanceous} 类的文件一般不用去管，主文件和~\ref{item:2}--~\ref{item:4} 类中的子文件在完成后由学生统一通过主文件编译，
 %最后生成包含所有内容和所有表格的、完整的论文的~PDF 格式的文件。子文件夹~{\tt codes} 中放有一些制作本说明时所用的一些文件，如果不需要可以删除。
-\subsection{三级标题}
+\subsection{三级标题}  %1.1.1
 \fbox{本节为测试三级标题在目录中的显示而设。}
+\subsection{三级标题} %1.1.2
+\subsubsection{四级标题}
+这是测试
+\subsubsection{siji}
+这也是测试
 \section{\TeX 简介\index{\TeX}}
 \TeX 是计算机科学家、图灵奖\index{图灵奖}得主~Knuth\index{Knuth} 教授设计的一款权威的科技论文排版软件！学习~\TeX(\LaTeX)，
 Knuth 的专著~\cite{knuth} 无疑是权威之选。该书排版堪称完美，从中可以看出大师的魅力。更重要的是~Knuth 教授无偿公开了~\TeX{} 的所有源代码，
