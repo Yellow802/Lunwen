@@ -1,0 +1,283 @@
+% !TeX TS-program = xelatex
+% !Mode TeXUTF-8
+%# -- codingutf-8 --
+% !TeX encoding = UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\zihao{-4}
+%---------------------------------------
+\chapter{表格、公式与插图\index{插图}}\label{sec:ssss}
+%---------------------------------------
+\section{表格}
+%---------------------------------------
+
+\begin{minipage}[t][6cm]{15cm}
+  盒子测试。表题应写在表格上方正中，表序写在表题左方不加标点，
+  空一格写表题，表题末尾不加标点，全文的表格统一编序，表序必须连续。表题用五号宋体居中，表格内中文用五号宋体，英文用五号Times New Roman字体。
+
+表题允许下页接写，接写时表题省略，表头应重复书写，并在右上方写``续表xx"。下面是一些表格的实例。
+\end{minipage}
+
+%\tabulinesep=1.6mm
+%
+%\begin{tabu} {|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|X[c]|}
+%    \tabucline-
+%    \multicolumn{16}{|c}{\raisebox{-1ex}{\zihao{4}{2020}\;学年~第{ \bf 1 }学期}} & \multicolumn{12}{|c|}{\raisebox{-1ex}{\zihao{4}期末考试}}\\\tabucline-
+%    \multicolumn{4}{|c}{\bf 考试时间} & \multicolumn{4}{|c}{120分钟} & \multicolumn{4}{|c}{\bf 考核方式} & \multicolumn{5}{|c}{闭卷} & \multicolumn{4}{|c|}{\bf 学生类别} &  \multicolumn{2}{c|}{本科} & \multicolumn{2}{c|}{\bf 人数} & \multicolumn{3}{c|}{100} \\\tabucline-
+%    \multicolumn{7}{|c|}{\bf 适用专业或科类} & \multicolumn{14}{c|}{数学 } &  \multicolumn{2}{c|}{{\bf 年级}} & \multicolumn{5}{c|}{2017} \\\tabucline-
+%    \tabuphantomline
+%\end{tabu}
+
+
+%\taburulecolor | lime | {blue}
+%\arrayrulewidth=1mm \doublerulesep=2mm
+%Here is
+%\begin{tabu}spread 0pt {X[-1]}
+%    \tabucline[\hbox{$\scriptstyle\star$}]
+%    a tabu\\
+%    environment \\
+%    made with \\ \lastline[5mm]\hline\hline\hline
+%\end{tabu}TabU package !\par
+%And the next paragraph follows
+%\begin{tabular}{|>{\bfseries}>{ before }l<{ one } <{ two }|}
+%    cell content
+%\end{tabular}
+%\begin{tabu}to .6\linewidth{cX[2mc]X} \tabucline[1pt]-
+%\everyrow{\tabucline[on 2pt ]-}
+%This is & a small example & of a \text{tabu} \\
+%which   & automatically   & inserts \\
+%a horizontal & line after & each of its row \everyrow{} \\ \tabucline[1pt]-
+%\end{tabu}
+
+表题应写在表格\index{表格}上方正中，表序写在表题左方不加标点，空一格写表题，表题末尾不加标点，全文的表格统一编序，表序必须连续。
+\begin{table}[h]
+  \centering
+  \caption{一些数学符号的{\LaTeX}输入命令与效果对照表}\label{table:1}
+  \begin{tabular}{|c|c|}\hline
+  输入 & 输出 \\\hline
+  \verb=$(\sum x_{ij})^{1/p}$= & $(\sum x_{ij})^{1/p}$ \\\hline
+  \verb=$\left(\sum x_{ij}\right)^{1/p}$= & $\left(\sum x_{ij}\right)^{1/p}$ \\\hline
+  \verb=$\bigl(\sum x_{ij}\bigr)^{1/p}$= & $\bigl(\sum x_{ij}\bigr)^{1/p}$ \\\hline
+  \verb=$\Bigl(\sum x_{ij}\Bigr)^{1/p}$= & $\Bigl(\sum x_{ij}\Bigr)^{1/p}$ \\\hline
+  \verb=$\biggl(\sum x_{ij}\biggr)^{1/p}$= & $\biggl(\sum x_{ij}\biggr)^{1/p}$ \\\hline
+  \verb=$\Biggl(\sum x_{ij}\Biggr)^{1/p}$= & $\Biggl(\sum x_{ij}\Biggr)^{1/p}$ \\
+  \hline
+\end{tabular}
+\end{table}
+表题用五号宋体居中(见表~\ref{table:1})，表格内中文用五号宋体，英文用五号Times New Roman字体。
+
+表题允许下页接写，接写时表题省略，表头应重复书写，并在右上方写``续表xx"。下面是一些表格的实例。
+%\begin{table}
+%\tbl{Radio-band beaming model parameters for\\ {FSRQs and BL Lacs.}}
+%{\begin{tabular}[l]{@{}lcccccc}
+%\toprule
+%  Class$^{\rm a}$ & $\gamma _1$ & $\gamma _2$$^{\rm b}$
+%
+%         & $\langle \gamma \rangle$
+%
+%         & $G$ & $|{\bm f}|$ & $\theta _{c}$ \\
+%
+%\hline%colorrule
+%  BL Lacs &5 & 36 & 7 & $-4.0$ & $1.0\times 10^{-2}$ & 10$^\circ$ \\
+%  FSRQs & 5 & 40 & 11 & $-2.3$ & $0.5\times 10^{-2}$ & 14$^\circ$ \\
+%\bottomrule
+%\end{tabular}}
+%\tabnote{$^{\rm a}$This footnote shows what footnote symbols to use.}
+%\tabnote{$^{\rm b}$This footnote shows the text turning over when a long footnote is added.}
+%\label{symbols}
+%\end{table}
+
+%\taburulecolor | gray!50|{red} \arrayrulewidth=1pt
+%{
+%\taburulecolor | yellow |{blue}
+%\begin{tabu}{|X|X|} \hline
+%Here the lines & are drawn in blue \\ \taburulecolor {green} \hline
+%But starting from here & they are green coloured ! \\ \hline
+%And now a nested tabu & \begin{tabu}{X} \firsthline\hline
+%guess what colour \\ \hline
+%is used for rules ?\\ \lasthline \hline
+%\end{tabu} \\\hline
+%\end{tabu}
+%In side the group, rule colors are blue
+%}%
+%After the group, rule colors are red again !
+%\begin{tabu}{X}\hline \hline \indent \end{tabu}
+
+
+\begin{table}[htb]
+ \centering\caption{三线表\index{三线表}示例}
+\begin{tabular}{ccccc}\toprule
+姓名 & 平时成绩 & 期中考试 & 期末考试 & 最后成绩\\\midrule
+张三 & 60       & 78       & 76       & 67      \\
+李四 & 89       & 92       & 98       & 95      \\
+王五 & 95       & 91       & 100      & 97      \\\bottomrule
+\end{tabular}
+\end{table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+\multirow{2}*{题号} & \multicolumn{5}{c|}{第一部分} & \multirow{2}*{第二部分} & \multirow{2}*{总分}\\\cline{2-6}
+                    & 一 & 二 & 三 & 四 & 五        &                         & \\\hline
+               得分 &    &    &    &    & $\surd$   &                         & \\\hline
+\end{tabular}
+\end{center}
+%\begin{table}[htb]
+% \centering
+% \caption{一班课程表}
+%   \begin{tabular}{|c| *{7}{c|}}\hline
+%   \backslashbox{课节}{星期} & 星期一 & 星期二 & 星期三 & 星期四 & 星期五 & 星期六 & 星期日 \\\hline
+%   1 & & & & & & &  \\\hline
+%   2 & & & & & & &  \\\hline
+%   3 & & & & & & &  \\\hline
+%   4 & & & & & & &  \\\hline
+%   5 & & & & & & &  \\\hline
+%   中午& \multicolumn{7}{c|}{}   \\\hline
+%   6 & & & & & & &  \\\hline
+%   7 & & & & & & &  \\\hline
+%   \end{tabular}
+%\end{table}
+\begin{table}[htb]
+\centering
+  \begin{tabular}{cc}
+   %\caption{左图}
+    \begin{tabular}{|ccc|}
+      \multicolumn{3}{c}{左表}\\\hline
+      a & b & c \\\hline
+      d & e & f \\\hline
+    \end{tabular}
+    &
+    %\caption{右图}
+    \begin{tabular}{|ccc|}
+    \multicolumn{3}{c}{右表}\\\hline
+      w  & x  & y  \\\hline
+      z  & u  & v  \\\hline
+    \end{tabular}\\
+  \end{tabular}
+\end{table}
+%---------------------------------------
+\section{公式}
+%---------------------------------------
+公式应另起一行，正文中的公式\index{公式}、算式或方程式等应编排序号，公式的编号用圆括号括起，
+序号标注于该式所在行(当有续行时，应标注于最后一行)的行末。公式可按章节顺序编号或按全文统一编号。公式序号必须连续，不得重复或跳缺。重复引用的公式不得另编新序号。
+较长的公式，如必须转行时，最好在等号处转行，如做不到这一点，要在$+,
+-, \times, \div$等数学符号处转行。
+数学符号应写在转行处的行首。上下式尽可能在等号``="处对齐。
+
+\begin{flushleft}
+$
+\begin{aligned}
+  f(x,y) &= f(0,0) + \frac{1}{1!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)f(0,0) \\
+         &= \frac{1}{2!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)^2f(0,0) + \cdots\\
+         &= \frac{1}{n!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)^nf(0,0) + K
+\end{aligned}
+$
+\end{flushleft}
+
+\[
+\begin{aligned}
+f(x,y) &= f(0,0) + \frac{1}{1!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)f(0,0) \\
+       &= \frac{1}{2!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)^2f(0,0) + \cdots\\
+       &= \frac{1}{n!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)^nf(0,0) + K
+\end{aligned}
+\]
+\begin{equation}\label{eq:a}
+    \begin{split}
+      f(x,y) =& f(0,0) + \frac{1}{1!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)f(0,0) \\
+              & + \frac{1}{2!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)^2f(0,0) + \cdots\\
+              & + \frac{1}{n!}\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}\right)^nf(0,0) + K
+    \end{split}
+\end{equation}
+\[ \Set{x\in\mathbf{R} | 0<|x|<\frac{5}{3}} \]
+\[
+\left\{\vphantom{\frac{5}{3}}x\in\mathbf{R} \right/\left.
+0<{|x|}<\frac{5}{3}\right \}
+\]
+$$S = \sum_{i=1}^n m_i, \int_a^bf(x)dx = F(x)$$
+
+\[\left\{
+\begin{aligned}
+  a_{11}x + a_{12}y &= b_1 \\
+  a_{21}x + a_{22}y &= b_2
+\end{aligned}
+\right.
+\]
+方程组只要一个编号
+\begin{equation}
+\begin{aligned}
+  a_{11}x + a_{12}y &= b_1 \\
+  a_{21}x + a_{22}y &= b_2\\
+  a_{21}x + a_{22}y &= b_2
+\end{aligned}
+\end{equation}
+或者
+\begin{equation}
+\left\{
+\begin{aligned}
+  a_{11}x + a_{12}y &= b_1 \\
+  a_{21}x + a_{22}y &= b_2
+\end{aligned}
+\right.
+\end{equation}
+方程组中如每个方程要单独编号，则可写成
+\begin{numcases}{}
+%要使用cases package
+        a_{11}x + a_{12}y = b_1\label{eq:111} \\
+        a_{21}x + a_{22}y = b_2\label{eq:222}
+\end{numcases}
+\eqref{eq:111}-\eqref{eq:222}
+或
+\begin{align}
+        a_{11}x + a_{12}y &= b_1 \\
+        a_{21}x + a_{22}y &= b_2
+\end{align}
+
+\[
+f(x) =  \left\{
+  \begin{array}{ll}
+    x+1, & \hbox{if $x>1$;} \\
+    -x, & \hbox{if $x\leq 1$.}
+  \end{array}
+\right.
+\]
+\begin{eqnarray}
+% \nonumber to remove numbering (before each equation)
+  a_{11}x + a_{12}y &=& c_1 \\
+  a_{21}x + a_{22}y &=& c_2
+\end{eqnarray}
+%---------------------------------------
+\makeatother
+\section{插图}
+%\setcounter{totalnumber}{5} 
+每幅插图\index{插图}应有图序和图题，全文插图可以统一编序，图序必须连续，不得重复或跳缺。
+图序和图题写在图的下方(见图~\ref{fig:1})，五号宋体居中。
+\begin{figure}[h]
+\centering
+\includegraphics[height=6.6cm,angle=0]{preample/ms}\\
+\caption{数学与统计学院院徽}\label{fig:1}
+\end{figure}
+下面是两种图片并列（图~\ref{fig:33} 和图~\ref{fig:44}，图~\ref{fig:21}和图~\ref{fig:22}）的两种情形：
+\begin{figure}[h]
+\centering
+\begin{minipage}[t]{5cm}
+\centering
+\mbox{\resizebox{!}{35mm}{\includegraphics{preample/ms}}}\\
+\caption{数学与统计学院院徽}\label{fig:33}
+\end{minipage}
+\hspace{1.5cm}
+\begin{minipage}[t]{5cm}
+\centering
+ \mbox{\resizebox{!}{15mm}{\includegraphics{preample/xishi}}}\\
+ \caption{西南大学校徽字体}\label{fig:44}
+\end{minipage}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\centering
+\mbox{\subfigure[第一个子图]{\resizebox{!}{15mm}{
+\includegraphics{preample/xishi}\label{fig:21}
+}}}\hspace{1.5cm}
+\mbox{\subfigure[第二个子图]{\resizebox{!}{35mm}{
+\includegraphics{preample/ms}\label{fig:22}
+}}}\\
+\caption{西南大学与数学与统计学院}
+\end{figure}

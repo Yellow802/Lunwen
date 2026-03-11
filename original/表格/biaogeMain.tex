@@ -1,0 +1,28 @@
+% !TeX TS-program = xelatex
+% !Mode TeXUTF-8
+%# -- codingutf-8 --
+% !TeX encoding = UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,
+               12pt,
+]{ctexart}
+%=====================================
+\input{defInform/hongbao}
+\input{defInform/inform}
+%=====================================
+\includeonly{
+	biaoge/biaoge_kaiti_1,   % 开题报告1
+	biaoge/biaoge_kaiti_2,   % 开题报告2
+	biaoge/biaoge_zhidao,    % 指导教师评阅表
+	biaoge/biaoge_jiaocha,   % 交叉评阅表
+	biaoge/biaoge_dabianjilu % 答辩记录表
+}
+\begin{document}
+\pagestyle{empty}
+%------------------------------------
+\include{biaoge/biaoge_kaiti_1}
+\include{biaoge/biaoge_kaiti_2}
+\include{biaoge/biaoge_zhidao}
+\include{biaoge/biaoge_jiaocha}
+\include{biaoge/biaoge_dabianjilu}
+\end{document}

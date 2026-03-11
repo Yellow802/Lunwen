@@ -1,0 +1,99 @@
+% !TeX TS-program = xelatex
+% !Mode TeXUTF-8
+%# -- codingutf-8 --
+% !TeX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 文件名 :     myTemplate.tex          
+%                                      
+% 创建:        包小敏                  
+%                                      
+% 创建于:      2011年02月21日          
+% 最后修改于:  2024年08月16日          
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,
+               12pt,
+               oneside
+]{ctexbook}
+%=========IncludePackages====================
+\usepackage{preample/SWUthesis}
+%============================================
+\makeindex % 生成索引
+%=========请填入相应的内容====================
+\newcommand{\university} {西南大学}          %
+\newcommand{\school}     {数学与统计学院}     %
+\newcommand{\daima}      {10635} % 单位代码
+\newcommand{\city}       {重庆 400715}       %
+\newcommand{\biaoti}{本科毕业论文~\LaTeX 模版} % 中文论文题目
+\newcommand{\cobiaoti}{--- 附带简单的使用说明}   % 副标题，没有的话将“---附带简单的使用说明”删除
+\newcommand{\enbiaoti}{Undergraduate Thesis {\LaTeX} Template} % 英文论文题目
+\newcommand{\nianji}     {2021级}            % 年级
+\newcommand{\banji} {3班}
+\newcommand{\zhuanye}    {数学与应用数学（师范）} % 专业
+\newcommand{\minzi}      {包小敏}               % 学生中文姓名
+\newcommand{\englishname}{NAME of Student}  % 学生英文姓名
+\newcommand{\zhixiedizhi}{北碚学府小区}      % 致谢词签名地址
+\newcommand{\jiaoshi}    {包小敏}           % 指导教师姓名
+\newcommand{\xuehao}     {222016314000000} % 学号
+\newcommand{\nian}{2025}                   % 毕业年份
+\newcommand{\nianxian}   {十八}    % 已使用年数(=2024-2006)
+\newcommand{\kaitiriqi}  {2024年12月20日}  % 开题日期
+\newcommand{\tijiaoriqi} {\today} % 提交日期---致谢词签名日期
+\newcommand{\dayinriqi}{2025年5月} % 打印日期-封面最下方的日期
+\newcommand{\dabianriqi} {2025年5月8日} 
+%====================================================
+% 若修改过程中某个文件不需修改，则将\includeonly中这个文件
+% 名注释掉可以加快编译速度。
+%
+% 请用XELATEX编译!
+%====================================================
+\includeonly{preample/coverpage,
+	         declaration/declare,
+	         fujian/abstract,
+	         fujian/zhixie,
+	         fujian/fulu,
+	         zhengwen/chaptone,
+	         zhengwen/chapttwo,
+	         zhengwen/chaptthree,
+	         zhengwen/chaptfour,
+	         zhengwen/chaptfive,
+	         wenxian/bibfile
+}
+%====================================================
+\makeindex
+
+\begin{document}
+\begin{titlepage}
+\include{preample/coverpage}
+\end{titlepage}
+%==================原 创 声 明======================
+\thispagestyle{empty}%
+\pagenumbering{roman}%
+\include{declaration/declare}
+%====================目 录=========================
+\pagestyle{plain}%
+\tableofcontents
+\newpage
+%=================================================
+\pagenumbering{arabic} %
+\setcounter{page}{1}   %
+%====================摘要==========================
+\include{fujian/abstract.tex}
+%==================正文开始========================
+\include{zhengwen/chaptone}
+\include{zhengwen/chapttwo}
+\include{zhengwen/chaptthree}
+\include{zhengwen/chaptfour}
+\include{zhengwen/chaptfive}
+%==================参考文献========================
+\include{wenxian/bibfile}
+%====================索引==========================
+\printindex %如不要索引请将此行和下行注释掉
+\addcontentsline{toc}{chapter}{索引}
+%====================致谢==========================
+\include{fujian/zhixie}
+%====================附录==========================
+\include{fujian/fulu}%如没有附录，请将这句注释掉
+%==================================================
+\end{document}
+%====END OF PAPER====

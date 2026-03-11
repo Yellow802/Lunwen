@@ -1,0 +1,1088 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.7.19)  16 AUG 2024 16:32
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**biaoge_kaiti_1.tex
+(./biaoge_kaiti_1.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+! Undefined control sequence.
+l.2 \extrarowsep
+                =.8mm
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \extrarowsep=
+                 .8mm
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no = ("3D) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 8 ("38) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+Missing character: There is no m ("6D) in font nullfont!
+
+! LaTeX Error: Environment tabu undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{tabu}
+                to .95\linewidth{X[c]X[c,1.2]X[c,.6]X[c,1.15]}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 9 ("39) in font nullfont!
+Missing character: There is no 5 ("35) in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   {
+l.3 \begin{tabu}to .95\linewidth{
+                                 X[c]X[c,1.2]X[c,.6]X[c,1.15]}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   {
+l.3 \begin{tabu}to .95\linewidth{
+                                 X[c]X[c,1.2]X[c,.6]X[c,1.15]}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 6 ("36) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no [ ("5B) in font nullfont!
+Missing character: There is no c ("63) in font nullfont!
+Missing character: There is no , ("2C) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no 5 ("35) in font nullfont!
+Missing character: There is no ] ("5D) in font nullfont!
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@mkpream ...hclass }\ifcase \@lastchclass \@acol 
+                                                  \or \or \@preamerr \@ne \o...
+l.4 ...umn{4}{c}{\zihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}
+                                                  \\\tabucline-
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \tabucline 
+                           
+l.4 ...ihao{-2}\bf 西南大学本科毕业论文（设计）开题报告}\\\tabucline
+                                                  -
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no - ("2D) in font nullfont!
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.5 ^^I\multicolumn{1}{|c|}{\bf 论文(设计)题目}
+                                          & \multicolumn{3}{c|}{\fangsong\bi...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.5 ^^I\multicolumn{1}{|c|}{\bf 论文(设计)题目}
+                                          & \multicolumn{3}{c|}{\fangsong\bi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.5 ^^I\multicolumn{1}{|c|}{\bf 论文(设计)题目}
+                                          & \multicolumn{3}{c|}{\fangsong\bi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.5 ^^I\multicolumn{1}{|c|}{\bf 论文(设计)题目} &
+                                            \multicolumn{3}{c|}{\fangsong\bi...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.5 ...题目} & \multicolumn{3}{c|}{\fangsong\biaoti}
+                                                    \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.5 ...题目} & \multicolumn{3}{c|}{\fangsong\biaoti}
+                                                    \\\hline
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.5 ...题目} & \multicolumn{3}{c|}{\fangsong\biaoti}
+                                                    \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.5 ...题目} & \multicolumn{3}{c|}{\fangsong\biaoti}
+                                                    \\\hline
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.5 ...题目} & \multicolumn{3}{c|}{\fangsong\biaoti}
+                                                    \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.5 ...题目} & \multicolumn{3}{c|}{\fangsong\biaoti}
+                                                    \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.5 ...题目} & \multicolumn{3}{c|}{\fangsong\biaoti}
+                                                    \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.5 ...ticolumn{3}{c|}{\fangsong\biaoti}  \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--5
+[]
+ []
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.6 ...^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{学生姓名}}
+                                                   & \multicolumn{1}{c|}{\fa...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.6 ...^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{学生姓名}}
+                                                   & \multicolumn{1}{c|}{\fa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.6 ...^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{学生姓名}}
+                                                   & \multicolumn{1}{c|}{\fa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{学生姓名}}
+                                                   & \multicolumn{1}{c|}{\fa...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.6 ...\multicolumn{1}{|c|}{\bf\ziju{1.2}{学生姓名}} &
+                                                   \multicolumn{1}{c|}{\fang...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.6 ...姓名}} & \multicolumn{1}{c|}{\fangsong\minzi}
+                                                   &  \multicolumn{1}{c|}{\b...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.6 ...姓名}} & \multicolumn{1}{c|}{\fangsong\minzi}
+                                                   &  \multicolumn{1}{c|}{\b...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.6 ...姓名}} & \multicolumn{1}{c|}{\fangsong\minzi}
+                                                   &  \multicolumn{1}{c|}{\b...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.6 ...}} & \multicolumn{1}{c|}{\fangsong\minzi} &
+                                                    \multicolumn{1}{c|}{\bf\...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.6 ...zi} &  \multicolumn{1}{c|}{\bf\ziju{2}{学号}}
+                                                   & \multicolumn{1}{c|}{\fa...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.6 ...zi} &  \multicolumn{1}{c|}{\bf\ziju{2}{学号}}
+                                                   & \multicolumn{1}{c|}{\fa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.6 ...zi} &  \multicolumn{1}{c|}{\bf\ziju{2}{学号}}
+                                                   & \multicolumn{1}{c|}{\fa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.6 ...} &  \multicolumn{1}{c|}{\bf\ziju{2}{学号}} &
+                                                   \multicolumn{1}{c|}{\fang...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.6 ...} & \multicolumn{1}{c|}{\fangsong 22222222}
+                                                   \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.6 ...} & \multicolumn{1}{c|}{\fangsong 22222222}
+                                                   \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.6 ...} & \multicolumn{1}{c|}{\fangsong 22222222}
+                                                   \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.6 ...icolumn{1}{c|}{\fangsong 22222222} \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--6
+[]
+ []
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.7 ^^I\multicolumn{1}{|c|}{\bf 学院\,/\,专业\,/\,年级}
+                                                  & \multicolumn{3}{c|}{\fan...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.7 ^^I\multicolumn{1}{|c|}{\bf 学院\,/\,专业\,/\,年级}
+                                                  & \multicolumn{3}{c|}{\fan...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.7 ^^I\multicolumn{1}{|c|}{\bf 学院\,/\,专业\,/\,年级}
+                                                  & \multicolumn{3}{c|}{\fan...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ^^I\multicolumn{1}{|c|}{\bf 学院\,/\,专业\,/\,年级}
+                                                  & \multicolumn{3}{c|}{\fan...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.7 ...multicolumn{1}{|c|}{\bf 学院\,/\,专业\,/\,年级} &
+                                                   \multicolumn{3}{c|}{\fang...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.7 ...n{3}{c|}{\fangsong\school/\zhuanye/\nianji}
+                                                    \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.7 ...n{3}{c|}{\fangsong\school/\zhuanye/\nianji}
+                                                    \\\hline
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.7 ...n{3}{c|}{\fangsong\school/\zhuanye/\nianji}
+                                                    \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \span.
+\sp@n ->\span 
+              \omit \advance \@multicnt \m@ne 
+l.7 ...n{3}{c|}{\fangsong\school/\zhuanye/\nianji}
+                                                    \\\hline
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\sp@n ->\span \omit 
+                    \advance \@multicnt \m@ne 
+l.7 ...n{3}{c|}{\fangsong\school/\zhuanye/\nianji}
+                                                    \\\hline
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.7 ...n{3}{c|}{\fangsong\school/\zhuanye/\nianji}
+                                                    \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.7 ...n{3}{c|}{\fangsong\school/\zhuanye/\nianji}
+                                                    \\\hline
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.7 ...fangsong\school/\zhuanye/\nianji}  \\\hline
+                                                  
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--7
+[]
+ []
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.8 ^^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{指导教师}}
+                                                 & \multicolumn{1}{c|}{\fang...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.8 ^^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{指导教师}}
+                                                 & \multicolumn{1}{c|}{\fang...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.8 ^^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{指导教师}}
+                                                 & \multicolumn{1}{c|}{\fang...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ^^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{指导教师}}
+                                                 & \multicolumn{1}{c|}{\fang...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.8 ^^I\multicolumn{1}{|c|}{\bf\ziju{1.2}{指导教师}} &
+                                                   \multicolumn{1}{c|}{\fang...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.8 ...}} & \multicolumn{1}{c|}{\fangsong\jiaoshi}
+                                                   &  \multicolumn{1}{c|}{\b...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.8 ...}} & \multicolumn{1}{c|}{\fangsong\jiaoshi}
+                                                   &  \multicolumn{1}{c|}{\b...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.8 ...}} & \multicolumn{1}{c|}{\fangsong\jiaoshi}
+                                                   &  \multicolumn{1}{c|}{\b...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.8 ... & \multicolumn{1}{c|}{\fangsong\jiaoshi} &
+                                                    \multicolumn{1}{c|}{\bf ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.8 ...g\jiaoshi} &  \multicolumn{1}{c|}{\bf 评阅时间}
+                                                   & \multicolumn{1}{c|}{\ka...
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.8 ...g\jiaoshi} &  \multicolumn{1}{c|}{\bf 评阅时间}
+                                                   & \multicolumn{1}{c|}{\ka...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.8 ...g\jiaoshi} &  \multicolumn{1}{c|}{\bf 评阅时间}
+                                                   & \multicolumn{1}{c|}{\ka...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.8 ...jiaoshi} &  \multicolumn{1}{c|}{\bf 评阅时间} &
+                                                   \multicolumn{1}{c|}{\kait...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.8 ...\bf 评阅时间} & \multicolumn{1}{c|}{\kaitiriqi}
+                                                   \\\tabucline-
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Undefined control sequence.
+<argument> ...nextchar \ifcase \@chclass \@classz 
+                                                  \or \@classi \or \@classii...
+l.8 ...\bf 评阅时间} & \multicolumn{1}{c|}{\kaitiriqi}
+                                                   \\\tabucline-
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@classi ->\ifcase \@lastchclass \@acol 
+                                        \@arrayrule \or \@addtopreamble {\hs...
+l.8 ...\bf 评阅时间} & \multicolumn{1}{c|}{\kaitiriqi}
+                                                   \\\tabucline-
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \tabucline 
+                           
+l.8 ...multicolumn{1}{c|}{\kaitiriqi} \\\tabucline
+                                                  -
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no - ("2D) in font nullfont!
+! Undefined control sequence.
+l.9 \tabuphantomline
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{tabu}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \end{tabu}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--12
+[]
+ []
+
+
+! LaTeX Error: Environment tabu undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{tabu}
+                 to 0.95\linewidth{|X|}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{tabu}t
+                  o 0.95\linewidth{|X|}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no o ("6F) in font nullfont!
+Missing character: There is no 0 ("30) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 9 ("39) in font nullfont!
+Missing character: There is no 5 ("35) in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   {
+l.13 \begin{tabu}to 0.95\linewidth{
+                                   |X|}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   {
+l.13 \begin{tabu}to 0.95\linewidth{
+                                   |X|}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no | ("7C) in font nullfont!
+Missing character: There is no X ("58) in font nullfont!
+Missing character: There is no | ("7C) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 本 ("672C) in font nullfont!
+Missing character: There is no 课 ("8BFE) in font nullfont!
+Missing character: There is no 题 ("9898) in font nullfont!
+Missing character: There is no 研 ("7814) in font nullfont!
+Missing character: There is no 究 ("7A76) in font nullfont!
+Missing character: There is no 意 ("610F) in font nullfont!
+Missing character: There is no 义 ("4E49) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+! Undefined control sequence.
+<argument> ...parboxrestore  1. 本课题研究意义：\fangsong 
+                                                  具体内容在文件夹{\tt table} 中的文件 k...
+l.19 ^^I}
+         \\\tabucline-^^I^^I
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 具 ("5177) in font nullfont!
+Missing character: There is no 体 ("4F53) in font nullfont!
+Missing character: There is no 内 ("5185) in font nullfont!
+Missing character: There is no 容 ("5BB9) in font nullfont!
+Missing character: There is no 在 ("5728) in font nullfont!
+Missing character: There is no 文 ("6587) in font nullfont!
+Missing character: There is no 件 ("4EF6) in font nullfont!
+Missing character: There is no 夹 ("5939) in font nullfont!
+! Undefined control sequence.
+<argument> ...  1. 本课题研究意义：\fangsong 具体内容在文件夹{\tt 
+                                                  table} 中的文件 kaiti 1.tex 内填...
+l.19 ^^I}
+         \\\tabucline-^^I^^I
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no 中 ("4E2D) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 文 ("6587) in font nullfont!
+Missing character: There is no 件 ("4EF6) in font nullfont!
+Missing character: There is no k ("6B) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no x ("78) in font nullfont!
+Missing character: There is no 内 ("5185) in font nullfont!
+Missing character: There is no 填 ("586B) in font nullfont!
+Missing character: There is no 写 ("5199) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+! Undefined control sequence.
+<recently read> \tabucline 
+                           
+l.19 ^^I}\\\tabucline
+                     -^^I^^I
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no - ("2D) in font nullfont!
+! Undefined control sequence.
+l.20 ^^I\tabuphantomline
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 2 ("32) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no 研 ("7814) in font nullfont!
+Missing character: There is no 究 ("7A76) in font nullfont!
+Missing character: There is no 内 ("5185) in font nullfont!
+Missing character: There is no 容 ("5BB9) in font nullfont!
+Missing character: There is no ： ("FF1A) in font nullfont!
+! Undefined control sequence.
+<argument> ... \@parboxrestore  2. 研究内容：\fangsong 
+                                                  具体内容在文件夹~{\tt table} 中的文件~...
+l.24 ^^I^^I}
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 具 ("5177) in font nullfont!
+Missing character: There is no 体 ("4F53) in font nullfont!
+Missing character: There is no 内 ("5185) in font nullfont!
+Missing character: There is no 容 ("5BB9) in font nullfont!
+Missing character: There is no 在 ("5728) in font nullfont!
+Missing character: There is no 文 ("6587) in font nullfont!
+Missing character: There is no 件 ("4EF6) in font nullfont!
+Missing character: There is no 夹 ("5939) in font nullfont!
+! Undefined control sequence.
+<argument> ...re  2. 研究内容：\fangsong 具体内容在文件夹~{\tt 
+                                                  table} 中的文件~{\tt kaiti\_1....
+l.24 ^^I^^I}
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no b ("62) in font nullfont!
+Missing character: There is no l ("6C) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no 中 ("4E2D) in font nullfont!
+Missing character: There is no 的 ("7684) in font nullfont!
+Missing character: There is no 文 ("6587) in font nullfont!
+Missing character: There is no 件 ("4EF6) in font nullfont!
+! Undefined control sequence.
+<argument> ...song 具体内容在文件夹~{\tt table} 中的文件~{\tt 
+                                                  kaiti\_1.tex} 内这个位置填写。 \@@...
+l.24 ^^I^^I}
+            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no k ("6B) in font nullfont!
+Missing character: There is no a ("61) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no i ("69) in font nullfont!
+Missing character: There is no 1 ("31) in font nullfont!
+Missing character: There is no . ("2E) in font nullfont!
+Missing character: There is no t ("74) in font nullfont!
+Missing character: There is no e ("65) in font nullfont!
+Missing character: There is no x ("78) in font nullfont!
+Missing character: There is no 内 ("5185) in font nullfont!
+Missing character: There is no 这 ("8FD9) in font nullfont!
+Missing character: There is no 个 ("4E2A) in font nullfont!
+Missing character: There is no 位 ("4F4D) in font nullfont!
+Missing character: There is no 置 ("7F6E) in font nullfont!
+Missing character: There is no 填 ("586B) in font nullfont!
+Missing character: There is no 写 ("5199) in font nullfont!
+Missing character: There is no 。 ("3002) in font nullfont!
+! Undefined control sequence.
+<recently read> \tabucline 
+                           
+l.25 ^^I\\\tabucline
+                    -^^I^^I
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no - ("2D) in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{tabu}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{tabu}
+               ^^I
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> biaoge_kaiti_1.tex
+                      
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 32 strings out of 474772
+ 475 string characters out of 5761268
+ 1918842 words of memory out of 5000000
+ 22287 multiletter control sequences out of 15000+600000
+ 558069 words of font info for 36 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 18i,3n,27p,227b,65s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.

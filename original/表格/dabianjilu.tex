@@ -1,0 +1,50 @@
+% !TeX TS-program = xelatex
+% !Mode TeXUTF-8
+%# -- codingutf-8 --
+% !TeX encoding = UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 答辩小组成员的名单：
+\newcommand{\zuzhang}{答辩组长}
+\newcommand{\zuyuanone}{余老一} % 如果组员人数
+\newcommand{\zuyuantwo}{袁老二}
+\newcommand{\zuyuanthree}{张三三}
+\newcommand{\zuyuanfour}{李四四}
+\newcommand{\zuyuanfive}{王五五}
+\newcommand{\zuyuansix}{刘六六}
+\newcommand{\zuyuanseven}{齐七七}% 如果组员人数不足七位，就将“组员七”删除。上同
+%----------------------------------------
+% 答辩记录、评阅意见和论文评定成绩在下面填写
+%--------论文评定成绩---------------------
+\newcommand{\dpingfen}{83} % 具体的分数在左端的{}中录入
+\newcommand{\jl}{
+%------------答辩记录----------------------
+\centering\fbox{答辩组成员的名单在文件{\tt dabianjilu.tex} 中指定的位置分别录入}
+
+这里留出了八个人名的位置，如果组员人数不够八人，那就将“$\{\text{名字}\}$”中的``名字"删除，使之成为"$\{\}$"。
+
+\centering{\fbox{答辩记录的内容在文件{\tt dabianjilu.tex} 中的这个位置录入}}
+\begin{description}
+	\item[问：] 什么是非线性递推数列？线性递推数列是怎么定义的？例子
+	\item[答：]非线性递推数列就是递推关系为分式型或者含有根号和次方的数列。形如$a_{n+1} = \frac{aa_n+b}{ca_n+d}$
+	类型的，线性递推数列就是含有$a_{n+1} = \uplambda_1a_1+\uplambda_2a_2+\cdots+\uplambda_na_n$ 递推关系式的数列。一般类型有$a_{n+1} = pa_n+q$。
+	\item[问：] 有哪些形容词可以修饰递推数列？
+	\item[答：] 高阶。（可以用齐次非齐次、常系数变系数、几阶）
+\end{description}
+\begin{center}
+	\colorbox{yellow}{$\text{记录的字数不要超过预留空格所允许的数量}$}
+\end{center}
+%-------------------------------------------
+}
+\newcommand{\dcomments}{
+%----------------------评审意见---------------------
+\begin{center}
+\fbox{对答辩的评审意见在文件{\tt dabianjilu.tex} 中的这个位置录入}
+\end{center}		
+\vspace{3mm}
+	
+本文结构合理，层次分明，思路清晰，显示出作者具有一定的综合运用所学知识的能力，符合本科毕业论文的要求，同意其毕业。
+\begin{center}
+	\colorbox{yellow}{$\text{评审意见的字数不要超出预留空格所允许的限额}$}
+\end{center}
+%----------------------------------------------------
+}

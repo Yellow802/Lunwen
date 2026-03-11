@@ -1,0 +1,16 @@
+% !TeX TS-program = xelatex
+% !Mode TeXUTF-8
+%# -- codingutf-8 --
+% !TeX encoding = UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\large\zihao{-4}
+
+\chapter{程序代码的插入\index{代码的插入}}\label{sec:codeinludsion}如果论文涉及到较长的计算机程序，可以考虑将其放在附录中。使用下面的命令
+\begin{verbatim}
+        \lstinputlisting[language=代码语言]{代码文件名}
+\end{verbatim}
+即可将程序代码引入~\CTeX 中，这里``代码语言"是指编写代码所使用的语言，如~{\tt C/C++}，{\tt Matlab} 等，而`` 代码文件名"是指存放代码所使用的文件名（如代码文件存放在与 fulu.txt 不同的文件夹中，
+还需给出那个文件夹的路径）。附录~\ref{appendix:A}---\ref{appendix:D}\index{附录}
+给出了~{\tt C/C++}，{\tt Matlab}，{\tt Python}, {\tt Mathematica} 和~{\tt R} 的具体例子。
+
