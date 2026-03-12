@@ -9,11 +9,8 @@
 %---------------------------------------
 矩阵作为数学领域里一颗璀璨的明星，其独特的性质连接着代数运算、集合变化与实际应用等诸多领域，矩阵自发现以来就吸引着无数学者的目光。而正定矩阵作为实对称矩阵的特殊子类，它优越的代数性质以及明确的几何意义为解决数学问题提供了强有力的工具。因此正定矩阵在高等代数中占有十分重要的地位，是高等代数的热门议题之一。
 
-模板的最近一次修改是2024年8月。 这次修改的变动比较大，首先 \university 对论文的结构、格式和要求进行了比较大的改动~\cite{moban_wenjian,moban_fujian}；其次，为了适应更多的使用者，本次模板的编译采用的是 XeLatex，不是以前的 PdfLatex。
-
-
-\section{模板的构成}\label{subsec:1}  %1.1
-本模板由若干文件组成，所有文件都存放在一个主文件夹\index{文件夹}里。为了使用和管理方便，在主文件夹中又分了七个子文件夹：{\tt preample, codes, tables，declaration，zhengwen, fujian, wenxian}，其中~{\tt preample\index{文件夹!preample}, tables\index{文件夹!table}, declaration\index{文件夹!declaration}} 中的文件一般不用管。子文件夹~{\tt codes} 中放有一些制作本说明时的附件所用的一些代码文件，如果不需要可以删除。
+\section{正定矩阵研究现状}\label{subsec:1}  %1.1
+正定矩阵起源于学者对二次型及Hermit型的研究，高斯引入“第一基本形式”蕴含正定思想，西尔维斯特
 %而~{\tt codes\index{文件夹!codes}} 在熟悉模板后可以删除。文件夹~{\tt fujian\index{文件夹!fujian}} 包含中英文摘要及附录，文件夹~{\tt declaration\index{文件夹!declaration}} 中是独创性声明，而文件夹~{\tt wenxian\index{文件夹!wenxian}} 则包含一个参考文献列表文件。模板由主文件~{\tt mytemplate.tex\index{mytemplate.tex}} 及五类子文件构成：
 \begin{description} %术语解释
   \item[主文件~mytemplate:] 论文的编译一般通过主文件进行。学生的基本信息，如姓名，学号，论文题目等，都在主文件上输入。主文件名可根据自己的需求改动。
@@ -77,26 +74,18 @@
 这是测试
 \subsubsection{siji}
 这也是测试
-\section{\TeX 简介\index{\TeX}}
-\TeX 是计算机科学家、图灵奖\index{图灵奖}得主~Knuth\index{Knuth} 教授设计的一款权威的科技论文排版软件！学习~\TeX(\LaTeX)，
-Knuth 的专著~\cite{knuth} 无疑是权威之选。该书排版堪称完美，从中可以看出大师的魅力。更重要的是~Knuth 教授无偿公开了~\TeX{} 的所有源代码，
-也就是说它是开源 (Open Source)的（通俗地说就是可以免费使用）。正因为这个原因，后人在其基础上开发了~\LaTeX 。\LaTeX 方便好用，被广泛传播，成了当今世界科技界最权威的论文排版软件。
-作为一个非常全面的~\LaTeX{} 的参考书，\cite{companion} 是一个不错的选择。如果阅读英文有困难，作为一个初学者，也可以先看看~\cite{zhanglibo}。
+\section{\TeX 简介\index{\TeX}}  %1.2
 
-\TeX{} 和~\LaTeX{} 排版软件和~MS 的~Word \index{Word}软件不同，后者是``所见即所得\index{所见即所得}"(WYSIWYG\index{WYSIWYG}，what you see is what you get)，而前者是``所想即所得\index{所想即所得}"(WYWIWYG\index{WYWIWYG}，what you want is what you get)。
-二者在风格上迥然不同，因此学习~\LaTeX{} 需要稍微改变一下自己的习惯。
 
-%\paragraph{Run-in headings.}
-国内较早使用的~\LaTeX 汉化版\index{\LaTeX 汉化版}是~
-\CTeX，可在~\href{http://www.ctex.org}{\CTeX{} 网站}~\index{\CTeX 网站}免费下载安装。\CTeX{} 安装包自带了一个编辑器~WinEdt\index{WinEdt}, 不过这个编辑器需要注册；否则会频繁跳出弹窗，提示你注册，很是烦人！可以用~\href{https://texstudio.sourceforge.net/}{TeXstudio} \index{TeXstudio} 作为编辑器来替代~WinEdt。这时需要将~TeXstudio 和\CTeX 的编译器关联起来，当然也可以选择 TexLive + TeXstudio 的组合。TexLive\index{TexLive} 可以从清华大学的~\href{https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/}{镜像网站}下载。
 
 %---------------------------------------
-\section{\LaTeX{} 文件的编译\index{\LaTeX 文件的编译}}
+\section{\LaTeX{} 文件的编译\index{\LaTeX 文件的编译}} %1.3
 %---------------------------------------
-\LaTeX{}的编译器\index{编译器}有多个，为了避免不必要的麻烦，本模板的编译指定采用~{\tt XeLatex}\index{XeLatex}. 因此用其它编译器编译就会报错. 另外，源文件如果是用其它编辑器录入的, 在用~TeXsdudio 打开保存之前请确认其是采用的是~UTF-8 \index{UTF-8}汉字编码\index{汉字编码}，否则文件可能会出现乱码. 可以先用记事本\index{记事本}将文件打开, 点击``文件", 在下拉菜单中选择``另存为"后会弹出一个如图~\ref{fig:ansi2utf8} 的窗口，在其下部``编码"的下拉窗口中选择``UTF-8", 然后点击保存既可转成UTF-8的编码.
-\begin{figure}[ht]
-  \centering
-  % Requires \usepackage{graphicx}
-  \includegraphics[width=12cm]{figs/ansi2utf8.png}\\
-  \caption{ANSI编码转UTF-8编码}\label{fig:ansi2utf8}
-\end{figure}
+
+
+%\begin{figure}[ht]   %插入图片
+ % \centering  %居中
+  % Requires \usepackage{graphicx} %引用宏包
+  %\includegraphics[width=12cm]{figs/ansi2utf8.png}\\ %插入图片
+  %\caption{ANSI编码转UTF-8编码}\label{fig:ansi2utf8} %图片标题
+%\end{figure}

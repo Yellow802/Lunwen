@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  11 MAR 2026 22:51
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  11 MAR 2026 23:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1578,12 +1578,6 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  (./zhengwen/chaptone.tex
 第1章
 
-LaTeX Warning: Citation `moban_wenjian' on page 2 undefined on input line 12.
-
-
-LaTeX Warning: Citation `moban_fujian' on page 2 undefined on input line 12.
-
-
 Package fontspec Info: 
 (fontspec)             Could not resolve font "FangSong/BI" (it probably
 (fontspec)             doesn't exist).
@@ -1612,44 +1606,23 @@ Package fontspec Info:
 [2
 
 
-]
-
-LaTeX Warning: Citation `knuth' on page 3 undefined on input line 82.
-
-
-LaTeX Warning: Citation `companion' on page 3 undefined on input line 84.
-
-
-LaTeX Warning: Citation `zhanglibo' on page 3 undefined on input line 84.
-
-
-Overfull \hbox (1.32918pt too wide) in paragraph at lines 86--88
-[]\TU/lmr/m/n/12.045 T[]X \TU/SimSun(0)/m/n/12.045 和 \TU/lmr/m/n/12.045 L[]T[]X \TU/SimSun(0)/m/n/12.045 排 版 软 件 和 \TU/lmr/m/n/12.045 MS \TU/SimSun(0)/m/n/12.045 的 \TU/lmr/m/n/12.045 Word []\TU/SimSun(0)/m/n/12.045 软 件 不 同，|  后 者 是 \TU/lmr/m/n/12.045 “\TU/SimSun(0)/m/n/12.045 所 见 即 所 得[]\TU/lmr/m/n/12.045 ”(WYSIWYG[]\TU/SimSun(0)/m/n/12.045 ，|
- []
-
-File: figs/ansi2utf8.png Graphic file (type bmp)
-<figs/ansi2utf8.png>
-) [3] [4] 
+]) [3] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./myTemplate.aux (./zhengwen/chaptone.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 73AA6DDD6308E0617A956BF0225EE244;717.
+(rerunfilecheck)             Checksum: 27AC24AB13A72337866D8299B582C0FB;741.
  ) 
 Here is how much of TeX's memory you used:
- 35632 strings out of 468167
- 732327 string characters out of 5436503
- 1347514 words of memory out of 5000000
- 63600 multiletter control sequences out of 15000+600000
- 643745 words of font info for 133 fonts, out of 8000000 for 9000
+ 35538 strings out of 468167
+ 727303 string characters out of 5436503
+ 1340514 words of memory out of 5000000
+ 63510 multiletter control sequences out of 15000+600000
+ 643737 words of font info for 132 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,10n,131p,1271b,677s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (4 pages).
+Output written on myTemplate.pdf (3 pages).
