@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  13 MAR 2026 00:29
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  16 MAR 2026 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1426,7 +1426,7 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 
 
 Writing index file myTemplate.idx
-(./myTemplate.aux (./zhengwen/chaptone.aux))
+(./myTemplate.aux (./zhengwen/chaptone.aux) (./wenxian/bibfile.aux))
 \openout1 = `myTemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1577,52 +1577,64 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
  (./zhengwen/chaptone.tex
 第1章
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "FangSong/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "FangSong/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "FangSong/I" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'FangSong(0)' created for font 'FangSong'
-(fontspec)             with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
-
 [2
 
 
-]) [3] 
+]
+第2章
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 69.
+
+) [3
+
+]
+\openout2 = `wenxian/bibfile.aux'.
+
+ (./wenxian/bibfile.tex
+LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 18.
+
+Overfull \hbox (65.89615pt too wide) in paragraph at lines 17--20
+[][]\TU/lmr/m/n/10.53937 http://jwc.swu.edu.cn/__local/6/D2/C1/4328A82EE22467E1BE3211788BB_70028746_53B64.pdf?e=.pdf[][] 
+ []
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 33.
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 47--49
+[]\TU/lmr/m/n/10.53937 D. R. Stinson, \TU/lmr/m/sl/10.53937 Cryptography—Theory and Practice (Third Edition)\TU/lmr/m/n/10.53937 [M]. Chapman &
+ []
+
+) [4
+
+
+
+
+] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(./myTemplate.aux (./zhengwen/chaptone.aux))
+(./myTemplate.aux (./zhengwen/chaptone.aux) (./wenxian/bibfile.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.41063pt have occurred.
+
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 27AC24AB13A72337866D8299B582C0FB;741.
+(rerunfilecheck)             Checksum: DDC8297A71679E234889EC754B7BE909;971.
  ) 
 Here is how much of TeX's memory you used:
- 35562 strings out of 468167
- 728849 string characters out of 5436503
- 1341512 words of memory out of 5000000
- 63534 multiletter control sequences out of 15000+600000
- 643737 words of font info for 132 fonts, out of 8000000 for 9000
+ 35777 strings out of 468167
+ 738544 string characters out of 5436503
+ 1344514 words of memory out of 5000000
+ 63724 multiletter control sequences out of 15000+600000
+ 651861 words of font info for 169 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,10n,131p,1271b,677s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (3 pages).
+Output written on myTemplate.pdf (4 pages).
