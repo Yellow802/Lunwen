@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  16 MAR 2026 22:18
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  16 MAR 2026 22:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1577,16 +1577,8 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
  (./zhengwen/chaptone.tex
 第1章
-[2
+) [2
 
-
-]
-第2章
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 69.
-
-) [3
 
 ]
 \openout2 = `wenxian/bibfile.aux'.
@@ -1608,7 +1600,7 @@ Underfull \hbox (badness 1308) in paragraph at lines 47--49
 []\TU/lmr/m/n/10.53937 D. R. Stinson, \TU/lmr/m/sl/10.53937 Cryptography—Theory and Practice (Third Edition)\TU/lmr/m/n/10.53937 [M]. Chapman &
  []
 
-) [4
+) [3
 
 
 
@@ -1626,15 +1618,15 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: DDC8297A71679E234889EC754B7BE909;971.
+(rerunfilecheck)             Checksum: BBC0F7A42D434010F686AE799D1684C7;443.
  ) 
 Here is how much of TeX's memory you used:
- 35777 strings out of 468167
- 738544 string characters out of 5436503
- 1344514 words of memory out of 5000000
- 63724 multiletter control sequences out of 15000+600000
- 651861 words of font info for 169 fonts, out of 8000000 for 9000
+ 35721 strings out of 468167
+ 736485 string characters out of 5436503
+ 1346514 words of memory out of 5000000
+ 63675 multiletter control sequences out of 15000+600000
+ 648689 words of font info for 152 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,10n,131p,1271b,677s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (4 pages).
+Output written on myTemplate.pdf (3 pages).
