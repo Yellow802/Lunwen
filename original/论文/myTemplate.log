@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  16 MAR 2026 22:47
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  17 MAR 2026 22:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1426,7 +1426,7 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 
 
 Writing index file myTemplate.idx
-(./myTemplate.aux (./zhengwen/chaptone.aux) (./wenxian/bibfile.aux))
+(./myTemplate.aux (./zhengwen/chapttwo.aux) (./wenxian/bibfile.aux))
 \openout1 = `myTemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1573,14 +1573,51 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  [1
 
 ]
-\openout2 = `zhengwen/chaptone.aux'.
+\openout2 = `zhengwen/chapttwo.aux'.
 
- (./zhengwen/chaptone.tex
+ (./zhengwen/chapttwo.tex
 第1章
-) [2
+[2
 
 
 ]
+Overfull \hbox (0.72937pt too wide) in paragraph at lines 64--66
+\TU/SimSun(0)/m/it/12.045 向 量 $\OML/cmm/b/it/12.045 ^^K$ \TU/SimSun(0)/m/it/12.045 在 基 $\OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; \OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; []  ; \OML/cmm/b/it/12.045 ^^K[]$ \TU/SimSun(0)/m/it/12.045 下 的 坐 标 为 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 x[]; x[]; []  ; x[]\OT1/cmr/m/n/12.045 )$\TU/lmr/m/it/12.045 . \TU/SimSun(0)/m/it/12.045 则 $\U/rsfs/m/n/12 A\OML/cmm/b/it/12.045 ^^K$ \TU/SimSun(0)/m/it/12.045 在 基 $\OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; \OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; []  ; \OML/cmm/b/it/12.045 ^^K[]$
+ []
+
+[3]
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FangSong(0)' created for font 'FangSong'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 167.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 220.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 220.
+) [4] [5] [6]
 \openout2 = `wenxian/bibfile.aux'.
 
  (./wenxian/bibfile.tex
@@ -1600,14 +1637,14 @@ Underfull \hbox (badness 1308) in paragraph at lines 47--49
 []\TU/lmr/m/n/10.53937 D. R. Stinson, \TU/lmr/m/sl/10.53937 Cryptography—Theory and Practice (Third Edition)\TU/lmr/m/n/10.53937 [M]. Chapman &
  []
 
-) [3
+) [7
 
 
 
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(./myTemplate.aux (./zhengwen/chaptone.aux) (./wenxian/bibfile.aux))
+(./myTemplate.aux (./zhengwen/chapttwo.aux) (./wenxian/bibfile.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
@@ -1618,15 +1655,15 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: BBC0F7A42D434010F686AE799D1684C7;443.
+(rerunfilecheck)             Checksum: 2D6389FC40768A3230D8835FBF9A3DB8;693.
  ) 
 Here is how much of TeX's memory you used:
- 35721 strings out of 468167
- 736485 string characters out of 5436503
- 1346514 words of memory out of 5000000
- 63675 multiletter control sequences out of 15000+600000
- 648689 words of font info for 152 fonts, out of 8000000 for 9000
+ 35911 strings out of 468167
+ 741204 string characters out of 5436503
+ 1353514 words of memory out of 5000000
+ 63839 multiletter control sequences out of 15000+600000
+ 652063 words of font info for 182 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,10n,131p,1271b,677s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,11n,131p,1271b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (3 pages).
+Output written on myTemplate.pdf (7 pages).
