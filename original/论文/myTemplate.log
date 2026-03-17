@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  17 MAR 2026 22:13
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  17 MAR 2026 22:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1581,7 +1581,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 
 ]
-Overfull \hbox (0.72937pt too wide) in paragraph at lines 64--66
+Overfull \hbox (0.72937pt too wide) in paragraph at lines 67--69
 \TU/SimSun(0)/m/it/12.045 向 量 $\OML/cmm/b/it/12.045 ^^K$ \TU/SimSun(0)/m/it/12.045 在 基 $\OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; \OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; []  ; \OML/cmm/b/it/12.045 ^^K[]$ \TU/SimSun(0)/m/it/12.045 下 的 坐 标 为 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 x[]; x[]; []  ; x[]\OT1/cmr/m/n/12.045 )$\TU/lmr/m/it/12.045 . \TU/SimSun(0)/m/it/12.045 则 $\U/rsfs/m/n/12 A\OML/cmm/b/it/12.045 ^^K$ \TU/SimSun(0)/m/it/12.045 在 基 $\OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; \OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; []  ; \OML/cmm/b/it/12.045 ^^K[]$
  []
 
@@ -1612,11 +1612,11 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 167.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 170.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 220.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 223.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 220.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 223.
 ) [4] [5] [6]
 \openout2 = `wenxian/bibfile.aux'.
 
@@ -1664,6 +1664,6 @@ Here is how much of TeX's memory you used:
  63839 multiletter control sequences out of 15000+600000
  652063 words of font info for 182 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,11n,131p,1271b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,11n,131p,1271b,816s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on myTemplate.pdf (7 pages).
