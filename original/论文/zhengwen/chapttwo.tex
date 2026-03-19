@@ -18,10 +18,54 @@
     $X=(x_1,x_2,\cdots,x_n)^{T}$,如果对任意一组不全为零的实数$x_1,x_2,\cdots,x_n$都有$f(X)=f(x_1,x_2,\cdots,x_n)>0$,则称该二次齐式是正定的，并称相应的
     矩阵$A$为正定的
 \end{definition}
-\begin{lemma}
-
+\begin{definition}
+    子式
+    \[
+H_{i}=\begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1i}\\
+        a_{21} & a_{22} & \cdots & a_{2i} \\
+        \vdots & \vdots &        & \vdots \\
+        a_{i1} & a_{i2} & \cdots & a_{ii}
+    \end{pmatrix},i=1,2,\cdots,n
+    \]称为矩阵$A=(a_{ij})_{n \times n}$的顺序主子式
+\end{definition}
+\begin{lemma}[QR分解]\citeu{wai_1}
+    设$A\in \mathbf{GL}_n(\mathbb{R})$,则存在唯一分解，$A=QR$,其中$Q$为正交矩阵，$R$为$n$阶上三角矩阵，且主对角元均为正数
 \end{lemma}
 \section{正定矩阵的性质}
+\begin{theorem}
+    $A$是$n$阶实对称矩阵，下列命题是等价的：\\
+    $(1)$$A$是正定的；\\
+    $(2)$对于任何$n$阶可逆矩阵$P$，都有$P^{T}AP$为正定矩阵；\\
+    $(3)$$A$的$n$个特征值全大于零；\\
+    $(4)$存在$n$阶可逆矩阵$P$,使得$P^{T}AP=E$;\\
+    $(5)$存在$n$阶可逆矩阵$Q$，使得$A=Q^{T}Q$;\\
+    $(6)$存在唯一的主对角元为正数的上三角矩阵$R$,使得$A=R^{T}R$。
+\end{theorem}
+\begin{proof}
+    $(1)\Rightarrow(2)$:因为$A$是正定矩阵，所以任意一组不为零的向量$X\in R^{n\times 1}$,都有$X^TAX>0$.任取$n$阶可逆矩阵$P$，则$PX\in R^{n\times 1}$,因此
+    $X^{T}(P^{T}XP)X=(PX)^{T}APX>0$,所以$P^{T}XP$为正定矩阵.
+
+    $(2)\Rightarrow(3)$:取$P$为正交矩阵$Q$，则$Q^{T}AQ=\Lambda=diag\left\{\lambda_1,\lambda_2,\cdots,\lambda_n\right\}$,其中$\lambda_i$是$A$的特征值，所以
+    $\left\{{\lambda_1,\lambda_2,\cdots,\lambda_n}\right\}=Q^{T}AQ>0$,既$A$的$n$个特征值全大于零.
+
+    $(3)\Rightarrow(4)$：因为$A$是实对称矩阵，所以存在正交矩阵$Q$，使得$Q^{T}AQ=\Lambda=diag\left\{ \lambda_1,\lambda_2,\cdots,\lambda_n\right\}$,其中$\lambda_i$是A的特征值，
+    因为$A$的特征值全大于零，所以取$P$为$Qdiag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}$,则
+    $$P^{T}AP=diag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}^{T}$$
+    $diag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}=E$,所以存在可逆矩阵$P$，使得$P^{T}AP=E$.
+
+    $(4)\Rightarrow(5)$:因为存在可逆矩阵$P$，使得$P^{T}AP=E$,所以$A=(P^{T})^{-1}P^{-1}=(P^{-1})^{T}P^{-1}$,令$Q=P^{-1}$，则$A=Q^{T}Q$.
+
+    $(5)\Rightarrow(6)$:存在性：由$A=Q^{T}Q$($Q$可逆)，对$Q$做$QR$分解：$Q=UR$，其中$U$是正交矩阵,$R$是主对角元为正的上三角矩阵。代入得：$A=(UR)^{T}(UR)=R^{T}U^{T}UR=R^{T}R$.
+    下证唯一性
+
+    设存在两个不同的主对角元为正数的上三角矩阵$R_1,R_2$，使得$A={R_1}^{T}{R_1}={R_2}^{T}{R_2}$,则$(R_2^{T})^{-1}{R_1}^{T}={R_2}{R_1}^{T}$,等式左边为下三角矩阵，
+    右边为上三角矩阵，则必为对角矩阵，由主对角元均为正数可得${R_1}={R_2}$，所以此分解唯一.
+
+    $(6)\Rightarrow(1)$:任取一组不为零的向量$X\in R^{n\times 1}$，有$X\neq 0,RX\neq 0$,则有$X^TAX=X^TR^TRX=(RX)^T(RX)=\left\| RX\right\|^2>0$，,所以$A$是正定矩阵.
+
+    综上所述，该定理得证。
+\end{proof}
 
 \LaTeX 文件的输入要涉及到一些 \LaTeX 命令，尤其是数学符号和公式的输入。这里通过实例来说明如何输入一些与数学有关的内容。建议学生在使用前阅读一遍。通过对比PDF文件中的效果和源文件对应的排版命令，初学者可以快速上手使用\LaTeX 。
 \begin{definition}

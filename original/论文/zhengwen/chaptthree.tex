@@ -6,11 +6,34 @@
 
 \zihao{-4}
 %---------------------------------------
-\chapter{表格、公式与插图\index{插图}}\label{sec:ssss}
+\chapter{正定矩阵的判定方法}\label{sec:ssss}
 %---------------------------------------
-\section{表格}
-%---------------------------------------
-
+我们知道，在高等代数的实际应用以及计算里面，如果能够判定一个矩阵是正定矩阵，往往会给计算带来极大的便利，本章在前面一章的基础上，总结正定矩阵的判定方法，并借助例题进一步
+加深对正定矩阵的理解。
+\section{定义法}
+%----------------------
+证明一个矩阵是否为正定矩阵最直接的方法便是验证该矩阵是否满足正定矩阵的定义。然而简单的方法往往只适用于比较简单，条件较少的题型。就例如例~\eqref{eg:1}，~\eqref{eg:2}
+\begin{example}\label{eg:1}\citeu{gaodai_1}
+  如果$A$,$B$都是$n$阶的正定矩阵，证明：$A+B$也是正定矩阵
+\end{example}
+\begin{solution}
+  因为$A$,$B$都是$n$阶正定矩阵，所以任意一组不为零的向量$X \in R^{n \times 1}$,都有$X^TAX>0$,$X^TB>0$.又$X^T(A+B)X=X^TAX+X^TBX$,所以$X^T(A+B)X>0$,
+  所以$A+B$是正定矩阵。
+\end{solution}
+\begin{example}(改自华南理工大学2011年研究生考试高等代数试题)\label{eg:2}\citeu{gaodai_2}
+  设A=(a_ij)_{n \times n},B=(b_ij)_{n \times n}为两个实对称正定矩阵.证明：n阶实方阵
+  \[C=
+\begin{pmatrix}
+  a_11b_11 & a_12b_12 & \cdots & a_1nb_1n\\
+  a_21b_21 & a_22b_22 & \cdots & a_2nb_2n\\
+  \vdots & \vdots &            & vdots\\
+  a_n1b_n1 & a_n2b_n2 & \cdots & a_nnb_{nn}
+\end{pmatrix}  
+  \]也是正定的
+\end{example}
+\begin{solution}
+  
+\end{solution}
 \begin{minipage}[t][6cm]{15cm}
   盒子测试。表题应写在表格上方正中，表序写在表题左方不加标点，
   空一格写表题，表题末尾不加标点，全文的表格统一编序，表序必须连续。表题用五号宋体居中，表格内中文用五号宋体，英文用五号Times New Roman字体。
