@@ -44,13 +44,13 @@
 %
 % 请用XELATEX编译!
 %====================================================
-\includeonly{%preample/coverpage,
+\includeonly{preample/coverpage,
 	         %declaration/declare,
 	         %fujian/abstract,
 	         %fujian/zhixie,
 	         %fujian/fulu,
 	         %zhengwen/chaptone,
-	         %zhengwen/chapttwo,
+	         zhengwen/chapttwo,
 	         zhengwen/chaptthree,
 	         %zhengwen/chaptfour,
 	         %zhengwen/chaptfive,
@@ -60,9 +60,9 @@
 \makeindex
 
 \begin{document}
-%\begin{titlepage}
-%\include{preample/coverpage}
-%\end{titlepage}
+\begin{titlepage}
+\include{preample/coverpage}
+\end{titlepage}
 %==================原 创 声 明======================
 %\thispagestyle{empty}%
 %\pagenumbering{roman}%
@@ -78,7 +78,7 @@
 %\include{fujian/abstract.tex}
 %==================正文开始========================
 %\include{zhengwen/chaptone}
-%\include{zhengwen/chapttwo}
+\include{zhengwen/chapttwo}
 \include{zhengwen/chaptthree}
 %\include{zhengwen/chaptfour}
 %\include{zhengwen/chaptfive}

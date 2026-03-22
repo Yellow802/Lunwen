@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  19 MAR 2026 23:42
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  22 MAR 2026 23:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1426,7 +1426,7 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 
 
 Writing index file myTemplate.idx
-(./myTemplate.aux (./zhengwen/chaptthree.aux) (./wenxian/bibfile.aux))
+(./myTemplate.aux (./preample/coverpage.aux) (./zhengwen/chapttwo.aux) (./zhengwen/chaptthree.aux) (./wenxian/bibfile.aux))
 \openout1 = `myTemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1554,35 +1554,144 @@ Package hyperref Info: Link coloring ON on input line 62.
 \@outlinefile=\write6
 \openout6 = `myTemplate.out'.
 
- (./myTemplate.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+\openout2 = `preample/coverpage.aux'.
+
+ (./preample/coverpage.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 2.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 8.
  (c:/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
+)
+File: preample/xidalogo.png Graphic file (type bmp)
+<preample/xidalogo.png>
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'YouYuan'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "YouYuan/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "YouYuan/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "YouYuan/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'YouYuan(0)' created for font 'YouYuan'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"YouYuan/OT:script=hani;language=dflt;"
+
+File: preample/xishi.png Graphic file (type bmp)
+<preample/xishi.png>
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <22.08249> not available
+(Font)              size <20.74> substituted on input line 29.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16.06> not available
+(Font)              size <17.28> substituted on input line 29.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimSun(1)' created for font 'SimSun' with
+(fontspec)             options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "KaiTi/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "KaiTi/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "KaiTi/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'KaiTi(0)' created for font 'KaiTi' with
+(fontspec)             options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
+
+) [1
+
+
+
+] (./myTemplate.toc)
 \tf@toc=\write7
 \openout7 = `myTemplate.toc'.
 
  [1
 
+
 ]
-\openout2 = `zhengwen/chaptthree.aux'.
+\openout2 = `zhengwen/chapttwo.aux'.
 
- (./zhengwen/chaptthree.tex
+ (./zhengwen/chapttwo.tex
 第1章
+[2
 
-LaTeX Warning: Reference `eg:2' on page 2 undefined on input line 15.
 
+] [3]
+Overfull \hbox (0.72937pt too wide) in paragraph at lines 134--136
+\TU/SimSun(0)/m/it/12.045 向 量 $\OML/cmm/b/it/12.045 ^^K$ \TU/SimSun(0)/m/it/12.045 在 基 $\OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; \OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; []  ; \OML/cmm/b/it/12.045 ^^K[]$ \TU/SimSun(0)/m/it/12.045 下 的 坐 标 为 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 x[]; x[]; []  ; x[]\OT1/cmr/m/n/12.045 )$\TU/lmr/m/it/12.045 . \TU/SimSun(0)/m/it/12.045 则 $\U/rsfs/m/n/12 A\OML/cmm/b/it/12.045 ^^K$ \TU/SimSun(0)/m/it/12.045 在 基 $\OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; \OML/cmm/b/it/12.045 ^^K[]\OML/cmm/m/it/12.045 ; []  ; \OML/cmm/b/it/12.045 ^^K[]$
+ []
 
-LaTeX Warning: Citation `gaodai' on page 2 undefined on input line 16.
-
+[4] [5]
 
 Package fontspec Info: 
 (fontspec)             Could not resolve font "FangSong/BI" (it probably
@@ -1609,13 +1718,27 @@ Package fontspec Info:
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 237.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 290.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 290.
+) [6] [7]
+\openout2 = `zhengwen/chaptthree.aux'.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ (./zhengwen/chaptthree.tex
+第2章
+[8
 
-[2
 
 
-] [3] [4]
+
+]
+Overfull \hbox (162.9498pt too wide) in paragraph at lines 43--51
+\TU/SimSun(0)/m/n/12.045 中，|  这 种 方 法 可 以 说 是 毫 无 用 武 之 地。| [] 
+ []
+
+[9] [10]
 File: preample/ms.eps Graphic file (type eps)
 <preample/ms.eps>
 File: preample/ms.eps Graphic file (type eps)
@@ -1623,45 +1746,43 @@ File: preample/ms.eps Graphic file (type eps)
 File: preample/xishi.png Graphic file (type bmp)
 <preample/xishi.png>
 
-Overfull \hbox (19.35501pt too wide) in paragraph at lines 276--276
+Overfull \hbox (19.35501pt too wide) in paragraph at lines 298--298
  [][] 
  []
 
+[11]
 File: preample/xishi.png Graphic file (type bmp)
 <preample/xishi.png>
 File: preample/ms.eps Graphic file (type eps)
 <preample/ms.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [5] [6]
+) [12]
 \openout2 = `wenxian/bibfile.aux'.
 
  (./wenxian/bibfile.tex
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 18.
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 16.
 
-Overfull \hbox (65.89615pt too wide) in paragraph at lines 17--20
+Overfull \hbox (65.89615pt too wide) in paragraph at lines 22--25
 [][]\TU/lmr/m/n/10.53937 http://jwc.swu.edu.cn/__local/6/D2/C1/4328A82EE22467E1BE3211788BB_70028746_53B64.pdf?e=.pdf[][] 
  []
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 33.
+(Font)              size <10.95> substituted on input line 38.
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 47--49
+Underfull \hbox (badness 1308) in paragraph at lines 52--54
 []\TU/lmr/m/n/10.53937 D. R. Stinson, \TU/lmr/m/sl/10.53937 Cryptography—Theory and Practice (Third Edition)\TU/lmr/m/n/10.53937 [M]. Chapman &
  []
 
-) [7
+) [13
 
 
 
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(./myTemplate.aux (./zhengwen/chaptthree.aux) (./wenxian/bibfile.aux))
+(./myTemplate.aux (./preample/coverpage.aux) (./zhengwen/chapttwo.aux) (./zhengwen/chaptthree.aux) (./wenxian/bibfile.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
@@ -1669,21 +1790,21 @@ L3 programming layer <2022/08/05>
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.41063pt have occurred.
+(Font)              up to 1.34248pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 73CE9746EF63A2AEA75F13BD5BC24810;516.
+(rerunfilecheck)             Checksum: 3DCF00DC0A64A44C7C7870A1E10FCFB8;1257.
  ) 
 Here is how much of TeX's memory you used:
- 35916 strings out of 468167
- 742665 string characters out of 5436503
- 1353514 words of memory out of 5000000
- 63841 multiletter control sequences out of 15000+600000
- 651949 words of font info for 180 fonts, out of 8000000 for 9000
+ 36316 strings out of 468167
+ 755486 string characters out of 5436503
+ 1352514 words of memory out of 5000000
+ 64189 multiletter control sequences out of 15000+600000
+ 662163 words of font info for 247 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,18n,131p,1271b,700s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,18n,131p,1271b,851s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (7 pages).
+Output written on myTemplate.pdf (14 pages).
