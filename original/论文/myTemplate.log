@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  24 MAR 2026 02:28
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  27 MAR 2026 01:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1687,36 +1687,32 @@ Package fontspec Info:
 
 
 ] [3] [4]
-Overfull \hbox (29.26456pt too wide) detected at line 177
+Overfull \hbox (29.26456pt too wide) detected at line 180
 [][][][]\OML/cmm/m/it/12.045 A[][] \OT1/cmr/m/n/12.045 = [] [] [] = []
  []
 
 
-Overfull \hbox (32.47621pt too wide) in paragraph at lines 224--225
+Overfull \hbox (32.47621pt too wide) in paragraph at lines 227--228
 []\TU/SimSun(0)/m/n/12.045 这 就 是 说\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 矩 阵 $\OML/cmm/m/it/12.045 A$ \TU/SimSun(0)/m/n/12.045 与 单 位 矩 阵 合 同\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 因 此\TU/lmr/m/n/12.045 ,$\OML/cmm/m/it/12.045 A$ \TU/SimSun(0)/m/n/12.045 是 正 定 矩 阵\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 或 者 说\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 二 次 型 $\OML/cmm/m/it/12.045 f\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 x[]; x[]; []  ; x[]\OT1/cmr/m/n/12.045 )$
  []
 
-) [5]
+[5]) [6]
 \openout2 = `zhengwen/chaptthree.aux'.
 
  (./zhengwen/chaptthree.tex
 第2章
-[6
+[7
 
 
 
 
-]
-
-LaTeX Warning: Reference `eg:6' on page 7 undefined on input line 65.
-
-[7]) [8]
+] [8] [9] [10]) [11]
 \openout2 = `wenxian/bibfile.aux'.
 
  (./wenxian/bibfile.tex
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 19.
-) [9
+) [12
 
 
 
@@ -1736,19 +1732,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 16C650C57D4FD6826ED9F224141A74CB;940.
+(rerunfilecheck)             Checksum: 8B7ABB9E997C27522664977EEC68CF26;1056.
  ) 
 Here is how much of TeX's memory you used:
- 35978 strings out of 468167
- 744105 string characters out of 5436503
- 1357513 words of memory out of 5000000
- 63892 multiletter control sequences out of 15000+600000
- 653837 words of font info for 197 fonts, out of 8000000 for 9000
+ 36021 strings out of 468167
+ 745956 string characters out of 5436503
+ 1361513 words of memory out of 5000000
+ 63933 multiletter control sequences out of 15000+600000
+ 653853 words of font info for 199 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,17n,131p,1271b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (10 pages).
+Output written on myTemplate.pdf (13 pages).

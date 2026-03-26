@@ -27,7 +27,7 @@
 \begin{pmatrix}
   a_{11}b_{11} & a_{12}b_{12} & \cdots & a_{1n}b_{1n}\\
   a_{21}b_{21} & a_{22}b_{22} & \cdots & a_{2n}b_{2n}\\
-  \vdots & \vdots &            & vdots\\
+  \vdots & \vdots &            & \vdots\\
   a_{n1}b_{n1} & a_{n2}b_{n2} & \cdots & a_{nn}b_{nn}
 \end{pmatrix}  
   \]也是正定的
@@ -58,11 +58,12 @@
 
   二阶顺序主子式：$D_2 = \begin{vmatrix}10&5\\5&3\end{vmatrix} = 10\times3 - 5\times5 = 30 - 25 = 5 > 0$
 
-  三阶顺序主子式：$D_3 = \begin{vmatrix}10&5&2\\5&3&2\\2&2&3\end{vmatrix} = 10\times(9-4) - 5\times(15-4) + 2\times(10-6) = 50 - 55 + 8 = 3 > 0$
+  三阶顺序主子式：$D_3 = \begin{vmatrix}10&5&2\\5&3&2\\2&2&3\end{vmatrix}
+  =10\times(9-4)-5\times(15-4)+2\times(10-6)=50-55+8=3>0$
 \end{solution}
 \section{特征值法}
 特征值是矩阵的重要性质，它表示矩阵在特征向量方向上的伸缩系数，当这种性质应用在正定矩阵的判定当中我们可以发现当矩阵的特征值全为正数的时候，矩阵就是正定的。
-因此我们也可以通过计算矩阵的特征值来判断矩阵的正定性，这种方法可以用在低阶或者一些抽象的矩阵当中，就例如例~\ref{eg:5}和~\ref{eg:6}
+因此我们也可以通过计算矩阵的特征值来判断矩阵的正定性，这种方法可以用在低阶或者一些抽象的矩阵当中，就例如例~\ref{eg:5}和例~\ref{eg:6}
 \begin{example}\label{eg:5}\citeu{li_2}
   设$A$是$n$阶正定矩阵,$B$是$n$阶半正定矩阵,并且满足$A^2=B^2$.
   证明:$B$是正定矩阵
@@ -76,9 +77,106 @@
     \]
     所以$\mu_i>0,i=1,2,\cdots,n$. 因此$B$是正定矩阵.
 \end{solution}
-\begin{example}\label{eg:6}
-  判断矩阵 $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ 是否为正定矩阵，并证明之。
+\begin{example}\label{eg:6}\citeu{gaodai_3}
+  判断矩阵$A=\begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$ 是否为正定矩阵，并证明之。
 \end{example}
 \begin{proof}
-  
+  首先，$A$ 是实对称矩阵，满足正定矩阵的前提条件。
+计算特征多项式：
+\[
+|\lambda E - A| = \begin{vmatrix} \lambda - 2 & -1 \\ -1 & \lambda - 2 \end{vmatrix} 
+= (\lambda - 2)^2 - 1 = \lambda^2 - 4\lambda + 3 = (\lambda - 1)(\lambda - 3)
+\]
+解得特征值 $\lambda_1 = 1$，$\lambda_2 = 3$，均大于0。
+根据正定矩阵的特征值判定定理，$A$ 为正定矩阵
 \end{proof}
+\section{惯性指数法}
+从正定矩阵的研究来看，正定矩阵是基于对二次型的研究而衍生出来，而惯性指数是二次型的一个重要性。基于对二次型的研究，我们发现当二次型的
+正惯性指数为二次型的阶数一致时，二次型是正定的。因此我们也能够通过非退化线性变换将二次型化为标准型，进而判断二次型的正惯性指数并以此判断
+相应矩阵的正定性。我们根据两道例题来进一步理解这种方法。
+\begin{example}\citeu{gaodai_1}
+  判断二次型$f(x_1,x_2,x_3)=10x_1^2 + 8x_1x_2 + 24x_1x_3 + 2x_2^2 - 28x_2x_3 + x_3^2$是否正定
+\end{example}
+\begin{solution}\[
+    \begin{aligned}
+    &10x_1^2 + 8x_1x_2 + 24x_1x_3 + 2x_2^2 - 28x_2x_3 + x_3^2 \\
+    =&10(x_1+\frac{2}{5}x_2+\frac{6}{5}x_3)^2+\frac{2}{5}x_2^2-\frac{236}{5}x_2x_3-\frac{67}{5}x_3\\
+    =&10(x_1+\frac{2}{5}x_2+\frac{6}{5}x_3)^2+\frac{2}{5}(x_2-59x_3)^2-\frac{7029}{5}x_3^2
+  \end{aligned}\]
+  令
+  \begin{equation*}
+    \left\{
+    \begin{aligned}
+      & y_1=x_1+\frac{2}{5}x_2+\frac{6}{5}x_3\\
+      & y_2=x_2-59x_3\\
+      & y_3=x_3
+    \end{aligned}
+    \right.,\quad \text{即}
+  \begin{pmatrix}
+    y_1\\y_2\\y_3
+  \end{pmatrix}=C\begin{pmatrix}
+    x_1\\x_2\\x_3
+  \end{pmatrix}=\begin{pmatrix}
+    1&\frac{2}{5}&\frac{6}{5}\\
+    0&1&-59\\0&0&1
+  \end{pmatrix}\begin{pmatrix}
+    x_1\\x_2\\x_3
+  \end{pmatrix}
+  \end{equation*}
+  显然$C$是可逆的，所以$y=Cx$是非退化线性替换则$f(x_1,x_2,x_3)=10y_1^2+\frac{2}{5}y_2^2-\frac{7029}{5}y_3^2$。
+  因为$\frac{7029}{5}<0$,所以二次型的正惯性指数为$2$，因此二次型$f(x_1,x_2,x_3)$不是正定的。
+  
+  我们用顺序主子式法来验证一下我们的结果。
+
+  由$f(x_1,x_2,x_3)=10x_1^2 + 8x_1x_2 + 24x_1x_3 + 2x_2^2 - 28x_2x_3 + x_3^2$得二次型对应得矩阵为\[A=
+  \begin{pmatrix}
+    10 & 4 & 12\\4 & 2 & -14\\12 & -14 & 1
+  \end{pmatrix}\]
+
+  一阶顺序主子式：$A_1=10>0$
+
+  二阶顺序主子式：$A_2=\begin{vmatrix}10 & 4\\4 & 2\end{vmatrix}=10 \times 2-4 \times 4=20-16=4>0$
+
+  $
+    \begin{aligned}\text{三阶顺序主子式：}
+      A_3 &=\begin{vmatrix}10 & 4 & 12\\4 & 2 & -14\\12 & -14 & 1\end{vmatrix} \\
+  &=10 \times 2 \times 1+4 \times (-14) \times 12+12 \times 4 \times (-14)\\
+  &-12 \times 2 \times 12-(-14) \times (-14) \times 10-1 \times 4 \times 4\\
+  &=20-672-672-288-1960-16=-3588<0
+    \end{aligned} $
+    
+    所以$A$不是正定矩阵，既二次型$f(x_1,x_2,x_3)=10x_1^2 + 8x_1x_2 + 24x_1x_3 + 2x_2^2 - 28x_2x_3 + x_3^2$不是正定的。
+\end{solution}
+
+从上面这个例子看出，相较于顺序主子式法，惯性指数法的计算量比较轻松一些，我们继续看下一个例子。
+\begin{example}\citeu{gaodai_4}
+$f(x_1,x_2,\cdots,x_n) = (x_1+a_1x_2)^2 + (x_2+a_2x_3)^2 + \cdots + (x_{n-1}+a_{n-1}x_n)^2 + (x_n+a_nx_1)^2,$
+其中$a_i(i=1,2,\cdots,n)$为实数. 试问: 当$a_1,a_2,\cdots,a_n$满足何种条件时,二次型$f(x_1,x_2,\cdots,x_n)$为正定二次型?
+\end{example}
+\begin{solution}
+  令\[\boldsymbol{y}=\begin{pmatrix}
+    y_1\\y_2\\y_3\\\vdots\\y_{n-1}\\y_n
+  \end{pmatrix}=\boldsymbol{Cx}=\boldsymbol{C}\begin{pmatrix}
+    x_1\\x_2\\x_3\\\vdots\\x_{n-1}\\x_n
+  \end{pmatrix}=\begin{pmatrix}
+    1     & a_1   & 0      & \cdots & 0      &0\\
+    0     & 1     &a_2     & \cdots & 0      &0\\
+    0&0&1&\cdots&0&0\\
+    \vdots&\vdots &\vdots  &        &\vdots  &\vdots\\
+    0     &0      &0       &\cdots  &1 &a_{n-1}\\
+    a_n     & 0     & 0      & \cdots & 0      &1
+  \end{pmatrix}\begin{pmatrix}
+    x_1\\x_2\\x_3\\\vdots\\x_{n-1}\\x_n
+  \end{pmatrix}\]
+
+  将矩阵$C$按第一列展开得
+  $$|C|\xlongequal{\text{按第一列展开}}1+(-1)^{n+1}a_1a_2\cdots a_n$$
+
+  所以当$a_1a_2\cdots a_n\neq(-1)^n$即$|C|\neq 0$ $C$是可逆的。因此$\boldsymbol{y}=\boldsymbol{Cx}$是非退化线性替换，
+  此时二次型$f(x_1,x_2,x_3)$的正惯性指数为$n$,所以二次型是正定的。
+\end{solution}
+
+从这道例题可以看出，惯性指数法在面对此类二次型时，可以快速的将原本复杂的二次型转化为平方和形式，进而将判定原二次型正定性的步骤
+替换成判断线性替换的退化性也就是替换矩阵是否可逆。这种方法大大的减少了计算的复杂程度，是我们的计算更加简便了。
+\section{合同法}
+\section{}
