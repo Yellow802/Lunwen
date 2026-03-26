@@ -12,16 +12,16 @@
 %\begin{definition} 
 %设$A\in \mathbb{R}^{n\times n}$,若$A=A^T$,对任意的$0\neq x \in \mathbb{R}^{n\times 1}$,的、均有$x^{T}Ax>0$,则称$A$为实对称正定矩阵。
 %\end{definition}
-\begin{definition}\label{defin:1}
+\begin{definition}\label{defin:1}\citeu{ju_1}
     给定实二次齐式
-    $$f(X)=f(x_1,x_2,\cdots,x_n)=\sum_{i=1}^n \sum_{j=1}^{n}a_ij x_i x_j =X^{T}AX$$
+    $$f(X)=f(x_1,x_2,\cdots,x_n)=\sum_{i=1}^n \sum_{j=1}^{n}a_ij x_i x_j =X^\mathrm{T}AX$$
     $X=(x_1,x_2,\cdots,x_n)^{T}$,如果对任意一组不全为零的实数$x_1,x_2,\cdots,x_n$都有$f(X)=f(x_1,x_2,\cdots,x_n)>0$,则称该二次齐式是正定的，并称相应的
     矩阵$A$为正定的
 \end{definition}
 \begin{definition}\citeu{wai_1}
-    设$A \in \mathbb{R}^{n \times n}$,若$A=A^T$,对任意的$0\neq x \in \mathbb{R}^n $,均有$x^TAx>0$,则称$A$为对称正定矩阵
+    设$A \in \mathbb{R}^{n \times n}$,若$A=A^\mathrm{T}$,对任意的$0\neq x \in \mathbb{R}^n $,均有$x^\mathrm{T}Ax>0$,则称$A$为对称正定矩阵
 \end{definition}
-\begin{definition}
+\begin{definition}\citeu{gaodai_1}
     子式
     \[
 H_{i}=\begin{pmatrix}
@@ -35,6 +35,9 @@ H_{i}=\begin{pmatrix}
 \begin{lemma}[QR分解]\citeu{wai_1}
     设$A\in \mathbf{GL}_n(\mathbb{R})$,则存在唯一分解，$A=QR$,其中$Q$为正交矩阵，$R$为$n$阶上三角矩阵，且主对角元均为正数
 \end{lemma}
+\begin{lemma}\label{le_1}\citeu{gaodai_1}
+    对于任意一个$n$阶实对称矩阵$A$，都存在一个n阶正交矩阵$T$,使$T^\mathbb{T}AT=T^{-1}AT$成对角形
+\end{lemma}
 \section{正定矩阵的性质}
 \begin{theorem}\label{main:1}
     $A$是$n$阶实对称矩阵，下列命题是等价的:
@@ -45,29 +48,30 @@ H_{i}=\begin{pmatrix}
         \item 存在$n$阶可逆矩阵$P$,使得$P^{T}AP=E$;\label{prop:1_4}
         \item 存在$n$阶可逆矩阵$Q$，使得$A=Q^{T}Q$;\label{prop:1_5}
         \item 存在唯一的主对角元为正数的上三角矩阵$R$,使得$A=R^{T}R$。\label{prop:1_6}
-    \end{enumerate}  
+    \end{enumerate}
 \end{theorem}
 \begin{proof}
-    $(1)\Rightarrow(2)$:因为$A$是正定矩阵，所以任意一组不为零的向量$X\in \mathbb{R}^n$,都有$X^TAX>0$.任取$n$阶可逆矩阵$P$，则$PX\in \mathbb{R}^{n}$,因此
-    $X^{T}(P^{T}XP)X=(PX)^{T}APX>0$,所以$P^{T}XP$为正定矩阵.
+    $(1)\Rightarrow(2)$:因为$A$是正定矩阵，所以任意一组不为零的向量$X\in \mathbb{R}^n$,都有$X^\mathrm{T}AX>0$.
+    任取$n$阶可逆矩阵$P$，则$PX\in \mathbb{R}^{n}$,因此$X^{T}(P^{T}XP)X=(PX)^{T}APX>0$,所以$P^{T}XP$为正定矩阵.
 
-    $(2)\Rightarrow(3)$:取$P$为正交矩阵$Q$，则$Q^{T}AQ=\Lambda=diag\left\{\lambda_1,\lambda_2,\cdots,\lambda_n\right\}$,其中$\lambda_i$是$A$的特征值，所以
-    $\left\{{\lambda_1,\lambda_2,\cdots,\lambda_n}\right\}=Q^{T}AQ>0$,既$A$的$n$个特征值全大于零.
+    $(2)\Rightarrow(3)$:取$P$为正交矩阵$Q$，则$Q^{T}AQ=\Lambda=diag\left\{\lambda_1,\lambda_2,\cdots,\lambda_n\right\}$,
+    其中$\lambda_i$是$A$的特征值，所以$\left\{{\lambda_1,\lambda_2,\cdots,\lambda_n}\right\}=Q^{T}AQ>0$,既$A$的$n$个特征值全大于零.
 
-    $(3)\Rightarrow(4)$：因为$A$是实对称矩阵，所以存在正交矩阵$Q$，使得$Q^{T}AQ=\Lambda=diag\left\{ \lambda_1,\lambda_2,\cdots,\lambda_n\right\}$,其中$\lambda_i$是A的特征值，
-    因为$A$的特征值全大于零，所以取$P$为$Qdiag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}$,则
-    $$P^{T}AP=diag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}^{T}$$
+    $(3)\Rightarrow(4)$：因为$A$是实对称矩阵，由引理~\ref{le_1}存在正交矩阵$Q$，使得$Q^{T}AQ=\Lambda=diag\left\{ \lambda_1,\lambda_2,\cdots,\lambda_n\right\}$,
+    其中$\lambda_i$是A的特征值，因为$A$的特征值全大于零，所以取$P$为$Qdiag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}$,
+    则$$P^{T}AP=diag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}^{T}$$
     $diag\left\{ \sqrt{\lambda_1},\sqrt{\lambda_2},\cdots,\sqrt{\lambda_n} \right\}=E$,所以存在可逆矩阵$P$，使得$P^{T}AP=E$.
 
     $(4)\Rightarrow(5)$:因为存在可逆矩阵$P$，使得$P^{T}AP=E$,所以$A=(P^{T})^{-1}P^{-1}=(P^{-1})^{T}P^{-1}$,令$Q=P^{-1}$，则$A=Q^{T}Q$.
 
-    $(5)\Rightarrow(6)$:存在性：由$A=Q^{T}Q$($Q$可逆)，对$Q$做$QR$分解：$Q=UR$，其中$U$是正交矩阵,$R$是主对角元为正的上三角矩阵。代入得：$A=(UR)^{T}(UR)=R^{T}U^{T}UR=R^{T}R$.
-    下证唯一性
+    $(5)\Rightarrow(6)$:存在性：由$A=Q^{T}Q$($Q$可逆)，对$Q$做$QR$分解：$Q=UR$，其中$U$是正交矩阵,$R$是主对角元为正的上三角矩阵。代入得：
+    $A=(UR)^{T}(UR)=R^{T}U^{T}UR=R^{T}R$.下证唯一性
 
-    设存在两个不同的主对角元为正数的上三角矩阵$R_1,R_2$，使得$A={R_1}^{T}{R_1}={R_2}^{T}{R_2}$,则$(R_2^{T})^{-1}{R_1}^{T}={R_2}{R_1}^{T}$,等式左边为下三角矩阵，
-    右边为上三角矩阵，则必为对角矩阵，由主对角元均为正数可得${R_1}={R_2}$，所以此分解唯一.
+    设存在两个不同的主对角元为正数的上三角矩阵$R_1,R_2$，使得$A={R_1}^{T}{R_1}={R_2}^{T}{R_2}$,则$(R_2^{T})^{-1}{R_1}^{T}={R_2}{R_1}^{T}$,
+    等式左边为下三角矩阵，右边为上三角矩阵，则必为对角矩阵，由主对角元均为正数可得${R_1}={R_2}$，所以此分解唯一.
 
-    $(6)\Rightarrow(1)$:任取一组不为零的向量$X\in \mathbb{R}^{n}$，有$X\neq 0,RX\neq 0$,则有$X^TAX=X^TR^TRX=(RX)^T(RX)=\left\| RX\right\|^2>0$，,所以$A$是正定矩阵.
+    $(6)\Rightarrow(1)$:任取一组不为零的向量$X\in \mathbb{R}^{n}$，有$X\neq 0,RX\neq 0$,
+    则有$X^\mathrm{T}AX=X^\mathrm{T}R^\mathrm{T}RX=(RX)^\mathrm{T}(RX)=\left\| RX\right\|^2>0$，,所以$A$是正定矩阵.
 
     综上所述，该定理得证。
 \end{proof}
@@ -78,261 +82,144 @@ H_{i}=\begin{pmatrix}
     正定矩阵的行列式大于零
 \end{corollary}
 \begin{proof}
-    设$A$是一个正定矩阵.由定理~\ref{main:1}的~\ref{prop:1_5}得，存在一个可逆矩阵$Q$,使得$A=Q^TQ$,两边取行列式得$|A|=|Q^T||Q|=|Q|^2>0$
+    设$A$是一个正定矩阵.由定理~\ref{main:1}的~\ref{prop:1_5}得，存在一个可逆矩阵$Q$,使得$A=Q^\mathrm{T}Q$,
+    两边取行列式得$|A|=|Q^\mathrm{T}||Q|=|Q|^2>0$
 \end{proof}
 \begin{theorem}%可以引用外文或者高代书
     实二次型
-    $$f(x_1,x_2,\cdots,x_n)=\sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij}x_ix_j=X^TAX$$
+    $$f(x_1,x_2,\cdots,x_n)=\sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij}x_ix_j=X^\mathrm{T}AX$$
     是正定矩阵的充分必要条件为矩阵$A$的顺序主子式全大于零
 \end{theorem}
 \begin{proof}
-    必要性：设二次型$$f(x_1,x_2,\cdots,x_n)=\sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij}x_ix_j=X^TAX$$是正定的
-\end{proof}
-\LaTeX 文件的输入要涉及到一些 \LaTeX 命令，尤其是数学符号和公式的输入。这里通过实例来说明如何输入一些与数学有关的内容。建议学生在使用前阅读一遍。通过对比PDF文件中的效果和源文件对应的排版命令，初学者可以快速上手使用\LaTeX 。
-\begin{definition}
-设
-\begin{equation}\label{eq:1}
-    a_1,a_2,\cdots, a_n, \cdots
-\end{equation}
-是一个数列。称
-$$\sum_{i=1}^n a_i$$
-为数列~\eqref{eq:1} 的前$n$项和\index{前$n$项和}。
-\end{definition}
-\begin{lemma}[新定理]
-若$p$是一个素数，且$p$不能够被$a\in \mathbb{N}$整除，则
-$$a^{p-1}\equiv 1\pmod{p}.$$
-\end{lemma}
-\begin{proof}
-引理的证明在此给出。
-\end{proof}
-\begin{theorem}[欧拉定理\index{欧拉定理}]\label{thm:euola}
-若$\gcd(a,n) = 1$，则
-$$a^{\phi(n)}\equiv 1\pmod{n}.$$
-\end{theorem}
-\begin{proof}
-下面我们来证明这个定理。
-\end{proof}
-\begin{lemma}[费尔马小定理\index{费尔马小定理}]
-若$p$是一个素数\index{素数}，且$p$不能够被$a\in \mathbb{N}$整除，则
-$$a^{p-1}\equiv 1\pmod{p}.$$
-\end{lemma}
-\begin{proof}
-引理的证明在此给出。
-\end{proof}
-\begin{corollary} 由组合数的定义立得
-$$\binom{n}{k}=\binom{n}{n-k}.$$
-\end{corollary}
-\begin{property}
-设线性变换$\mathscr{A}$在基$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_n$下矩阵为
-\[
+    必要性：设二次型$$f(x_1,x_2,\cdots,x_n)=\sum_{i=1}^{n} \sum_{j=1}^{n} a_{ij}x_ix_j=X^\mathrm{T}AX$$是正定的,令
+    $$f_k=(x_1,x_2,\cdots,x_k)=\sum_{i=1}^{k} \sum_{j=1}^{k} a_{ij}x_ix_j$$,则对于任意一组实数$c_,c_2,\cdots,c_k$
+    有$$f_k=(c_1,c_2,\cdots,c_k)=\sum_{i=1}^{k} \sum_{j=1}^{k} a_{ij}c_ic_j=f(c_1,c_2,\cdots,c_k,0,0,\cdots,0)>0$$
+    所以$f_k$是正定的，由推论~\ref{cor:2}得$f_k$的行列式\[
+    \begin{vmatrix}
+        a_{11} & a_{12} & \cdots & a_{1k}\\
+        a_{21} & a_{22} & \cdots & a_{2k}\\
+        \vdots & \vdots &          \vdots\\
+        a_{k1} & a_{k2} & \cdots & a_{kk}
+    \end{vmatrix},\quad k=1,2,\cdots,n
+    \]大于零，因此二次型$f$的各阶顺序主子式全大于零。
+
+    充分性：对$n$作数学归纳法
+
+    当$n=1$时，$f(x_1)=a_{11}{x_1}^2$,由条件$a_{11}>0$,得$f$显然是正定的，既$n=1$时充分性成立。
+
+    假设充分性对于$n-1$阶的二次型成立，现在来看$n$阶二次型，令
+    \[A_1=
+    \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1,n-1}\\
+        a_{21} & a_{22} & \cdots & a_{2,n-1}\\
+        \vdots & \vdots &          \vdots\\
+        a_{n-1,1} & a_{n-1,2} & \cdots & a_{n-1,n-1}
+    \end{pmatrix},\quad \boldsymbol{\alpha}=
+    \begin{pmatrix}
+        a_{1,n-1}\\
+        a_{2,n-1}\\
+        \vdots\\
+        a_{n-1,n-1}
+    \end{pmatrix}
+    \]
+    于是矩阵$A$可以写成
+    \[
+    \begin{pmatrix}
+        A_1 & \boldsymbol{\alpha}\\
+        \boldsymbol{\alpha}^\mathrm{T} & a_{nn}
+    \end{pmatrix}\
+    \]
+
+    由$A$的各阶顺序主子式全大于零得，$A_1$的各阶顺序主子式也全大于零，由归纳假设得$A_1$是正定矩阵。由定理~\ref{main:1}的~\ref{prop:1_4}，
+存在$n-1$阶可逆矩阵$P$,使得$P^{T}AP=E_{n-1}$.令\[C_1=
 \begin{pmatrix}
- a_{11} & a_{12} & \cdots & a_{1n} \\
- a_{21} & a_{22} & \cdots & a_{2n} \\
- \vdots & \vdots &        & \vdots \\
- a_{n1} & a_{n2} & \cdots & a_{nn}
-\end{pmatrix},
-\]
-向量$\bm{\alpha}$在基$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_n$下的坐标为$ (x_1,x_2,\cdots,x_n)$. 则$\mathscr{A}\bm{\alpha}$在基$\bm{\alpha}_1,\bm{\alpha}_2,\cdots,\bm{\alpha}_n$下的坐标$(y_1,y_2,\cdots,y_n)$可以按公式
-\[
+    P & 0\\
+    0 & 1
+\end{pmatrix}\]
+于是\[{C_1}^\mathrm{T}A{C_1}=
 \begin{pmatrix}
-y_1 \\
-y_2 \\
-\vdots \\
-y_n
-\end{pmatrix} = 
-\begin{pmatrix}
-a_{11} & a_{12} & \cdots & a_{1n} \\
-a_{21} & a_{22} & \cdots & a_{2n} \\
-\vdots & \vdots &        & \vdots \\
-a_{n1} & a_{n2} & \cdots & a_{nn}
-\end{pmatrix} 
-\begin{pmatrix}
-x_1 \\
-x_2 \\
-\vdots \\
-x_n
+    P^\mathrm{T} & 0\\
+    0 & 1
 \end{pmatrix}
+\begin{pmatrix}
+    A_1 & \boldsymbol{\alpha}\\
+    \boldsymbol{\alpha}^\mathrm{T} & a_{nn}
+\end{pmatrix}
+\begin{pmatrix}
+    P & 0\\
+    0 & 1
+\end{pmatrix}=
+\begin{pmatrix}
+    E_{n-1} & G^\mathrm{T}\boldsymbol{\alpha}\\
+    \boldsymbol{\alpha}^\mathrm{T}G & a_nn
+\end{pmatrix}\]
+再令\[C_2=
+\begin{pmatrix}
+    E_{n-1} & -G^\mathrm{T}\boldsymbol{\alpha}\\
+    0 & 1
+\end{pmatrix}\]
+则\[{C_2}^\mathrm{T}{C_1}^\mathrm{T}A{C_1}{C_2}=
+\begin{pmatrix}
+    E_{n-1} & 0\\
+    -\boldsymbol{\alpha}^\mathrm{T} G & 1
+\end{pmatrix}
+\begin{pmatrix}
+   E_{n-1} & G^\mathrm{T}\boldsymbol{\alpha}\\
+   \boldsymbol{\alpha}^\mathrm{T}G & a_{nn}
+\end{pmatrix}
+\begin{pmatrix}
+    E_{n-1} & -G^\mathrm{T}\boldsymbol{\alpha}\\
+    0 & 1
+\end{pmatrix}=
+\begin{pmatrix}
+    E_{n-1} & 0\\
+    0 & a_{nn}-\boldsymbol{\alpha}^\mathrm{T}GG^\mathrm{T}\boldsymbol{\alpha}
+\end{pmatrix}\]
+令\[
+C = C_1 C_2,\quad a_{nn} - \boldsymbol{\alpha}^\mathrm{T} G G^\mathrm{T} \boldsymbol{\alpha} = a,
 \]
-计算.
-\end{property}
-%\begin{example}[2011\ 江苏卷]在平面直角坐标系$xOy$中，$M$,$N$分别是椭圆$C$：
-%$\frac{x^{2}}{4^{2}}+\frac{y^{2}}{2^{2}}=1$的顶点，
-%过坐标原点的直线交椭圆于$P$,$A$两点，其中点$P$在第一象限.过$P$ 作$x$轴的垂线，
-%垂足为$C$.连接$AC$，并延长交椭圆与点$B$.设直线$PA$的斜率为$k$.\\
-%\parbox{10cm}{
-%\begin{enumerate}
-%  \item 若直线$PA$平分线段$MN$，求$k$的值；
-%  \item 当$k=2$时，求点$P$到直线$AB$的距离$d$；
-%  \item 对任意的$k>0$，求证：$PA\perp PB$.
-%\end{enumerate}}
-%\parbox{3cm}{
-%\begin{center}
-%\includegraphics[height=3cm,angle=0]{figs/wangyang_2}\\
-%%\caption{椭圆}\label{fig:1}
-%\end{center}}
-%\end{example}
-
-\begin{example}[2010，重庆卷]
-例题的内容$\langle ID,\mu,\gamma\rangle$，$\langle ID,\mu,\gamma\rangle$。
-\end{example}
-\begin{solution}
-解答的内容。
-\end{solution}
-\begin{exercise}
-练习题的内容。
-\end{exercise}
-\begin{note}
-设
+就有
 \[
-D =
-\begin{vmatrix}
-  5 & 1 & -1 \\
-  -7 & 1 & 15 \\
-  8 & 1 & -21 \\
-\end{vmatrix}
+C^\mathrm{T} A C = 
+\begin{pmatrix}
+1 & & & \\
+& \ddots & & \\
+& & 1 & \\
+& & & a
+\end{pmatrix}.
 \]
-则$D$的第$3$列元的代数余子式的和是$0$。
-\end{note}
-\begin{proposition}
-计算$\displaystyle\int_0^1 \dfrac{x}{\sqrt{1-x^2}} {\rm d}x$。
-\end{proposition}
-\begin{solution}
-因为
-$$\int_0^u\frac{x}{\sqrt{1-x^2}} {\rm d}x = -\int_0^u\frac{ {\rm d}(1-x^2)}{2\sqrt{1-x^2}} = \left.-\sqrt{1-x^2}\right|_0^u = 1-\sqrt{1-u^2},$$
-所以$\displaystyle\int_0^u\frac{x}{\sqrt{1-x^2}} {\rm d}x = \lim_{u\rightarrow 1^{-}}\int_0^u\frac{x}{\sqrt{1-x^2}} {\rm d}x = 1$。
-\end{solution}
-\section{矩阵的排版}
-分块矩阵的排版示例如下：
+两边取行列式得
 \[
-\left[
-\begin{array}{cc:cc}
-a_{11} & a_{12} & b_{11} & b_{12}\\
-a_{21} & a_{22} & b_{21} & b_{22}\\
-\hdashline
-c_{11} & c_{12} & d_{11} & d_{12}\\
-c_{11} & c_{12} & d_{11} & d_{12}\\
-\end{array}
-\right]
+|C|^2 |A| = a.
 \]
-\[\mathbf{A} =
-\bordermatrix{
-      & n_1             & n_2             & \cdots & n_l \cr
-  s_1 & \mathbf{A}_{11} & \mathbf{A}_{12} & \cdots & \mathbf{A}_{1l}\cr
-  s_2 & \mathbf{A}_{21} & \mathbf{A}_{22} & \cdots & \mathbf{A}_{2l}\cr
-  \vdots & \vdots       &        \vdots   &        & \vdots \cr
-  s_t & \mathbf{A}_{t1} & \mathbf{A}_{t2} & \cdots & \mathbf{A}_{tl}\cr
-}
+由条件有 $|A|>0$, 因此 $a>0$. 显然
+\[
+\begin{pmatrix}
+1 & & & \\
+& \ddots & & \\
+& & 1 & \\
+& & & a
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & & & \\
+& \ddots & & \\
+& & 1 & \\
+& & & \sqrt{a}
+\end{pmatrix}
+\begin{pmatrix}
+1 & & & \\
+& \ddots & & \\
+& & 1 & \\
+& & & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & & & \\
+& \ddots & & \\
+& & 1 & \\
+& & & \sqrt{a}
+\end{pmatrix}.
 \]
-%A = \begin{pmat}[{..|..}]
-%a_{11} & a_{12} & a_{13} & a_{14} & a_{15}\cr
-%a_{21} & a_{22} & a_{23} & a_{24} & a_{25}\cr\-
-%a_{31} & a_{32} & a_{33} & a_{34} & a_{35}\cr
-%\end{pmat},
-%$$
-\section{算法的排版}
-用~\LaTeX{} 可以排出版面非常漂亮的算法\index{算法的排版}。根据所用宏包\index{宏包}的不同，所用的命令也有所不同。下面是用宏包~{\tt algorithm} 和~{\tt algorithmic} 进行算法排版的一个例子。所排的算法是著名的\index{欧几里得算法}欧几里得算法\citeu{stinson}。
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{algorithm}
-\caption{Euclidean algorithm$(a,b)$}
-\label{alg:euclid}
-\algsetup{indent=2em}
-\begin{algorithmic}[1]
-\REQUIRE 整数$a,b\ne 0$
-\ENSURE  商序列$q_1,q_2,\cdots,q_m$和$\gcd(a,b)$
-\STATE $r_0 \leftarrow a$
-\STATE $r_1 \leftarrow b$
-\STATE $m\leftarrow 1$
-\WHILE{$r_m\ne 0$}
-\STATE $q_m\leftarrow\lfloor\frac{r_{m-1}}{r_m}\rfloor$
-\STATE $r_m\leftarrow r_{m-1}-q_mr_m$
-\STATE $m\leftarrow m+1$
-\ENDWHILE
-\STATE $m\leftarrow m-1$
-\RETURN {$(q_1,q_2,\cdots, q_m;r_m)$}
-\STATE {\bf{comment：}$r_m = \gcd(a,b)$ }
-\end{algorithmic}
-\end{algorithm}
-算法~\ref{alg:euclid_no} 是另一个标号\index{算法标号}的。
-\begin{algorithm}
-\caption{Euclidean algorithm$(a,b)$}
-\label{alg:euclid_no}
-\algsetup{indent=2em}
-\begin{algorithmic}[2]
-\REQUIRE 整数$a,b\ne 0$
-\ENSURE  商序列$q_1,q_2,\cdots,q_m$和$\gcd(a,b)$
-\STATE $r_0 \leftarrow a$
-\STATE $r_1 \leftarrow b$
-\STATE $m\leftarrow 1$
-\WHILE{$r_m\ne 0$}
-\STATE $q_m\leftarrow\lfloor\frac{r_{m-1}}{r_m}\rfloor$
-\STATE $r_m\leftarrow r_{m-1}-q_mr_m$
-\STATE $m\leftarrow m+1$
-\ENDWHILE
-\STATE $m\leftarrow m-1$
-\RETURN {$(q_1,q_2,\cdots, q_m;r_m)$}
-%\STATE {\bf{comment：}$r_m = \gcd(a,b)$ }
-\end{algorithmic}
-\end{algorithm}
-
-%\setcounter{algorithm}{4}
-下面的算法~\ref{alg:rgg} 是一个生成$q$进制$n$元反射Gray码\index{反射Gray码}的算法。
-\begin{algorithm}
-\caption{\sc Reflected Gray Code Generation$(q, n)$}
-\label{alg:genGraycode}
-\algsetup{indent=2em}
-\begin{algorithmic}
-%%\TitleOfAlgo{Euclidean algorithm$(a,b)$}
-\label{alg:rgg}
-\REQUIRE{整数$q>0,n > 0$}
-\ENSURE {$q^n\times n$矩阵$G$}
-\STATE $g_{n-1}g_{n-2}\cdots g_{0}\longleftarrow 00\cdots 0$
-\WHILE{$(2\mid q$ \AND $g_{n-1},g_{n-2},\cdots ,g_{0} \neq q-1,\bm{0}_{n-1})$ \OR $(2\nmid q$ \AND $g_{n-1},\cdots ,g_{n} \neq \bm{(q-1)}_{n}$}
-    \STATE $i\leftarrow 0$
-    \STATE $\sigma \leftarrow (g_{n-1}+g_{n-2}+\cdots +g_{i+1})\bmod 2$
-    \IF{$\sigma=0$ \AND $g_{i}\neq q-1$}
-        \STATE $g_{i} \leftarrow g_{i}+1$
-    \ELSIF{$\sigma =1$ \AND $g_{i}\neq 0$}
-        \STATE $g_{i}\leftarrow g_{i}-1$
-    \ENDIF
-    \STATE $i \leftarrow i+1$
-    \IF{$i = q-1$}
-        \STATE $g_{i} \leftarrow g_{i}+1$
-    \ENDIF
-\ENDWHILE
-\end{algorithmic}
-\end{algorithm}
-%再来一个不标号不连线的：
-%\LinesNotNumbered
-%\SetAlgoNoLine
-%
-%\begin{procedure}[H]
-%\caption{$f$()\hspace{-.15cm}$(x,a,b)$}
-%\label{proc:f}
-%\KwIn{$x,a,b$}
-%\uIf{$x\in S_1$}{
-%    $f\leftarrow (\beta x,a,(b+1)\bmod n)$
-%    }
-%\uElseIf{$x\in S_2$}{
-%    $f\leftarrow (x^2,2a\bmod n,2b\bmod n)$
-%    }
-%\Else{
-%    $f\leftarrow (\alpha x,(a+1)\bmod n,b)$
-%    }
-%\Return{$(f)$}
-%\end{procedure}
-\begin{algorithm}
-%\COMMENT{external}% {\bf  External: }}
-%\begin{algorithmic}
-\caption{{\sc Collision-To-Second-Preimage}\,$(h)$}
-\label{algo:c2sec}
-\begin{algorithmic}
-%\REQUIRE{Hash 函数$h$}
-\STATE \bf{External: }{\sc Oracle-2nd-Preimage}
-\STATE Choose $x\in_R\mathcal{X}$
-\IF{{\sc Oracle-2nd-Preimage}\,$(h,x) = x'$}
-    \RETURN $(x,x')$
-\ELSE{\RETURN{{\rm(``failure")}}}
-\ENDIF
-\end{algorithmic}
-\end{algorithm}
+这就是说,矩阵$A$与单位矩阵合同,因此,$A$是正定矩阵,或者说,二次型$f(x_1, x_2, \cdots, x_n)$是正定的.
+\end{proof}
