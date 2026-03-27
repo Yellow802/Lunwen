@@ -6,4 +6,6 @@
 \contentsline {section}{\numberline {2.2}顺序主子式法}{8}{section.2.2}%
 \contentsline {section}{\numberline {2.3}特征值法}{8}{section.2.3}%
 \contentsline {section}{\numberline {2.4}惯性指数法}{9}{section.2.4}%
-\contentsline {chapter}{参考文献}{12}{example.8}%
+\contentsline {section}{\numberline {2.5}合同法}{11}{section.2.5}%
+\contentsline {section}{\numberline {2.6}}{12}{section.2.6}%
+\contentsline {chapter}{参考文献}{13}{section.2.6}%

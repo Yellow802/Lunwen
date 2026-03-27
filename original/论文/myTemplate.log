@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  27 MAR 2026 01:48
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  27 MAR 2026 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1706,13 +1706,18 @@ Overfull \hbox (32.47621pt too wide) in paragraph at lines 227--228
 
 
 
-] [8] [9] [10]) [11]
+] [8] [9] [10]
+Overfull \hbox (42.15004pt too wide) detected at line 251
+[][]
+ []
+
+[11]) [12]
 \openout2 = `wenxian/bibfile.aux'.
 
  (./wenxian/bibfile.tex
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 19.
-) [12
+(Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 22.
+) [13
 
 
 
@@ -1733,15 +1738,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 8B7ABB9E997C27522664977EEC68CF26;1056.
+(rerunfilecheck)             Checksum: 6F71BB7B59265D8EDB7F8D2B8FB89DAD;1236.
  ) 
 Here is how much of TeX's memory you used:
- 36021 strings out of 468167
- 745956 string characters out of 5436503
- 1361513 words of memory out of 5000000
- 63933 multiletter control sequences out of 15000+600000
+ 36060 strings out of 468167
+ 748238 string characters out of 5436503
+ 1366514 words of memory out of 5000000
+ 63972 multiletter control sequences out of 15000+600000
  653853 words of font info for 199 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,17n,131p,1271b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (13 pages).
+Output written on myTemplate.pdf (14 pages).

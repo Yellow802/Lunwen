@@ -177,6 +177,120 @@ $f(x_1,x_2,\cdots,x_n) = (x_1+a_1x_2)^2 + (x_2+a_2x_3)^2 + \cdots + (x_{n-1}+a_{
 \end{solution}
 
 从这道例题可以看出，惯性指数法在面对此类二次型时，可以快速的将原本复杂的二次型转化为平方和形式，进而将判定原二次型正定性的步骤
-替换成判断线性替换的退化性也就是替换矩阵是否可逆。这种方法大大的减少了计算的复杂程度，是我们的计算更加简便了。
+替换成判断线性替换的退化性也就是替换矩阵是否可逆。这种方法大大的减少了计算的复杂程度，使我们的计算更加简便了。
 \section{合同法}
+由前面我们知道，与正定矩阵合同的矩阵也是正定矩阵且正定矩阵一定与单位矩阵合同，
+既若$A$是正定矩阵，$A\simeq B$那么存在可逆矩阵$P,C$使得$P^\mathrm{T}BP=A=C^\mathrm{T}C$
+因此我们也可以通过合同关系来判定矩阵的正定性。对于具体矩阵(元素全知的矩阵)我们可以通过对矩阵做合同变换，
+看变换后的结果是否为单位矩阵或者是对角元为正数的矩阵，而对于抽象矩阵(元素未知的矩阵)，
+我们可以通过将矩阵拆分成一来判断正定性。
+\begin{example}[Wilson测试矩阵]\citeu{wai_3}  
+证明矩阵$W$是正定矩阵\[
+W = \begin{bmatrix}
+5 & 7 & 6 & 5 \\
+7 & 10 & 8 & 7 \\
+6 & 8 & 10 & 9 \\
+5 & 7 & 9 & 10
+\end{bmatrix}
+\]
+\end{example}
+\begin{solution}
+  对矩阵$W$做初等变化,构造增广矩阵
+\[\begin{aligned}
+\begin{bmatrix} W\\E\end{bmatrix}
+&=
+\begin{bmatrix}
+5 & 7 & 6 & 5 \\
+7 & 10 & 8 & 7 \\
+6 & 8 & 10 & 9 \\
+5 & 7 & 9 & 10 \\
+\hline
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+5 & 0 & 0 & 0 \\[4pt]
+0 & \dfrac15 & -\dfrac25 & 0 \\[4pt]
+0 & -\dfrac25 & \dfrac{14}{5} & 3 \\[4pt]
+0 & 0 & 3 & 5 \\[4pt]
+\hline
+1 & -\dfrac75 & -\dfrac65 & -1 \\[4pt]
+0 & 1 & 0 & 0 \\[4pt]
+0 & 0 & 1 & 0 \\[4pt]
+0 & 0 & 0 & 1
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+5 & 0 & 0 & 0 \\[4pt]
+0 & \dfrac15 & 0 & 0 \\[4pt]
+0 & 0 & 2 & 3 \\[4pt]
+0 & 0 & 3 & 5 \\[4pt]
+\hline
+1 & -\dfrac75 & -4 & -1 \\[4pt]
+0 & 1 & 2 & 0 \\[4pt]
+0 & 0 & 1 & 0 \\[4pt]
+0 & 0 & 0 & 1
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+5 & 0 & 0 & 0 \\[4pt]
+0 & \dfrac15 & 0 & 0 \\[4pt]
+0 & 0 & 2 & 0 \\[4pt]
+0 & 0 & 0 & \dfrac12 \\[4pt]
+\hline
+1 & -\dfrac75 & -4 & -\dfrac{11}{2} \\[4pt]
+0 & 1 & 2 & 3 \\[4pt]
+0 & 0 & 1 & \dfrac32 \\[4pt]
+0 & 0 & 0 & 1
+\end{bmatrix}\\
+&=
+\begin{bmatrix} \Lambda \\ P \end{bmatrix}.
+\end{aligned}\]
+所以$P^\mathrm{T}AP=\Lambda$。因为$\Lambda$的对角元均为正数，所以$W$是正定矩阵。
+\end{solution}
+\begin{example}\citeu{gaodai_3}
+  设 $A_1,A_2,\dots,A_k$ 均为 $n$ 阶实对称正定矩阵，$c_1,c_2,\dots,c_k>0$，则
+\[
+M = c_1A_1 + c_2A_2 + \cdots + c_kA_k
+\]
+为正定矩阵。
+\end{example}
+\begin{solution}
+    由正定矩阵的合同等价条件：实对称矩阵 $A$ 正定 $\iff A \simeq I_n$（与单位矩阵合同），即存在可逆矩阵 $P_i$，使得
+    \[
+    A_i = P_i^\top P_i,\quad i=1,2,\dots,k.
+    \]代入 $M$ 并整理：因 $c_i>0$，令 $d_i=\sqrt{c_i}$，则
+    \[
+    M = \sum_{i=1}^k c_i P_i^\top P_i
+        = \sum_{i=1}^k (d_i P_i)^\top (d_i P_i).
+    \]
+    记 $Q_i = d_i P_i$，则 $Q_i$ 仍可逆，于是
+    \[
+    M = \sum_{i=1}^k Q_i^\top Q_i.
+    \]
+    
+    令
+    \[
+    Q = \begin{pmatrix} Q_1 \\ Q_2 \\ \vdots \\ Q_k \end{pmatrix},
+    \]
+    则 $Q$ 为 $kn\times n$ 列满秩矩阵，且
+    \[
+    Q^\top Q = \begin{pmatrix} Q_1^\top & Q_2^\top & \cdots & Q_k^\top \end{pmatrix}
+                \begin{pmatrix} Q_1 \\ Q_2 \\ \vdots \\ Q_k \end{pmatrix}
+                = \sum_{i=1}^k Q_i^\top Q_i = M.
+    \]
+    
+    由合同判定正定性：
+    对实对称矩阵 $M=Q^\top Q$，若 $Q$ 列满秩，则
+    \[
+    M \simeq I_n,
+    \]
+    即 $M$ 的正惯性指数等于阶数 $n$，负惯性指数为 $0$。
+    
+    由惯性定理，$M$ 为正定矩阵。
+
+\end{solution}
 \section{}
