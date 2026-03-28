@@ -10,7 +10,7 @@
 %---------------------------------------
 我们知道，在高等代数的实际应用以及计算里面，如果能够判定一个矩阵是正定矩阵，往往会给计算带来极大的便利，本章在前面一章的基础上，
 总结正定矩阵的判定方法，并借助例题进一步加深对正定矩阵的理解。
-\section{定义法}
+\section{定义法}\label{2_1}
 %----------------------
 证明一个矩阵是否为正定矩阵最直接的方法便是验证该矩阵是否满足正定矩阵的定义。然而简单的方法往往只适用于比较简单，条件较少的题型。
 就例如例~\eqref{eg:1}，~\eqref{eg:2}
@@ -180,10 +180,10 @@ $f(x_1,x_2,\cdots,x_n) = (x_1+a_1x_2)^2 + (x_2+a_2x_3)^2 + \cdots + (x_{n-1}+a_{
 替换成判断线性替换的退化性也就是替换矩阵是否可逆。这种方法大大的减少了计算的复杂程度，使我们的计算更加简便了。
 \section{合同法}
 由前面我们知道，与正定矩阵合同的矩阵也是正定矩阵且正定矩阵一定与单位矩阵合同，
-既若$A$是正定矩阵，$A\simeq B$那么存在可逆矩阵$P,C$使得$P^\mathrm{T}BP=A=C^\mathrm{T}C$
+既若$A$是正定矩阵，且$A\simeq B$那么存在可逆矩阵$P,C$使得$P^\mathrm{T}BP=A=C^\mathrm{T}C$
 因此我们也可以通过合同关系来判定矩阵的正定性。对于具体矩阵(元素全知的矩阵)我们可以通过对矩阵做合同变换，
 看变换后的结果是否为单位矩阵或者是对角元为正数的矩阵，而对于抽象矩阵(元素未知的矩阵)，
-我们可以通过将矩阵拆分成一来判断正定性。
+我们可以通过将矩阵拆分成可逆矩阵的转置乘积，即$$A=C^\mathrm{T}C，\text{其中C是可逆矩阵}$$来判断正定性。
 \begin{example}[Wilson测试矩阵]\citeu{wai_3}  
 证明矩阵$W$是正定矩阵\[
 W = \begin{bmatrix}
@@ -251,6 +251,18 @@ W = \begin{bmatrix}
 \end{aligned}\]
 所以$P^\mathrm{T}AP=\Lambda$。因为$\Lambda$的对角元均为正数，所以$W$是正定矩阵。
 \end{solution}
+\begin{example}
+  设$A$为正定矩阵，证明$A^{-1}$是正定矩阵
+\end{example}
+\begin{solution}
+  由于$A$正定，则存在可逆矩阵$C$,使得$A=C^\mathrm{T}C$，所以$A^{-1}=(C^\mathrm{T}C)^{-1}=C^{-1}(C^{-1})^\mathrm{T}$
+  令$G=C^\mathrm{T}$,则$A^{-1}=G^\mathrm{T}G$，因为$G$是可逆矩阵，所以$A^{-1}$是正定矩阵。
+\end{solution}
+\section{拆分法}\label{2_6}
+当$A$是正定矩阵时，我们知道$A$可以拆分成可逆矩阵的转置乘积，即\\$A=C^\mathrm{T}C，\text{其中C是可逆矩阵}$.
+然而经过对正定矩阵的研究表明$C$不是可逆矩阵也可以证明$A$是正定矩阵，
+只需要$C$是秩为$n$的列(行)满秩实矩阵，使得$A=C^\mathrm{T}C(CC^\mathrm{T})$，则$A$正定。
+这样一来，就极大的扩充矩阵拆分的范围，减轻了计算的负担。
 \begin{example}\citeu{gaodai_3}
   设 $A_1,A_2,\dots,A_k$ 均为 $n$ 阶实对称正定矩阵，$c_1,c_2,\dots,c_k>0$，则
 \[
@@ -259,17 +271,17 @@ M = c_1A_1 + c_2A_2 + \cdots + c_kA_k
 为正定矩阵。
 \end{example}
 \begin{solution}
-    由正定矩阵的合同等价条件：实对称矩阵 $A$ 正定 $\iff A \simeq I_n$（与单位矩阵合同），即存在可逆矩阵 $P_i$，使得
+    由正定矩阵的合同等价条件：实对称矩阵 $A$ 正定 $\iff A \simeq E_n$（与单位矩阵合同），即存在可逆矩阵 $P_i$，使得
     \[
-    A_i = P_i^\top P_i,\quad i=1,2,\dots,k.
+    A_i = C_i^\mathrm{T} C_i,\quad i=1,2,\dots,k.
     \]代入 $M$ 并整理：因 $c_i>0$，令 $d_i=\sqrt{c_i}$，则
     \[
-    M = \sum_{i=1}^k c_i P_i^\top P_i
-        = \sum_{i=1}^k (d_i P_i)^\top (d_i P_i).
+    M = \sum_{i=1}^k c_i C_i^\mathrm{T} P_i
+        = \sum_{i=1}^k (d_i C_i)^\mathrm{T} (d_i C_i).
     \]
-    记 $Q_i = d_i P_i$，则 $Q_i$ 仍可逆，于是
+    记 $Q_i = d_i C_i$，则 $Q_i$ 仍可逆，于是
     \[
-    M = \sum_{i=1}^k Q_i^\top Q_i.
+    M = \sum_{i=1}^k Q_i^\mathrm{T} Q_i.
     \]
     
     令
@@ -278,19 +290,34 @@ M = c_1A_1 + c_2A_2 + \cdots + c_kA_k
     \]
     则 $Q$ 为 $kn\times n$ 列满秩矩阵，且
     \[
-    Q^\top Q = \begin{pmatrix} Q_1^\top & Q_2^\top & \cdots & Q_k^\top \end{pmatrix}
+    Q^\mathrm{text}{T} Q = \begin{pmatrix} Q_1^\mathrm{T} & Q_2^\mathrm{T} & \cdots & Q_k^\mathrm{T} \end{pmatrix}
                 \begin{pmatrix} Q_1 \\ Q_2 \\ \vdots \\ Q_k \end{pmatrix}
-                = \sum_{i=1}^k Q_i^\top Q_i = M.
+                = \sum_{i=1}^k Q_i^\mathrm{T} Q_i = M.
     \]
-    
-    由合同判定正定性：
-    对实对称矩阵 $M=Q^\top Q$，若 $Q$ 列满秩，则
-    \[
-    M \simeq I_n,
-    \]
-    即 $M$ 的正惯性指数等于阶数 $n$，负惯性指数为 $0$。
-    
-    由惯性定理，$M$ 为正定矩阵。
-
+    由定理~\ref{theo_6}得矩阵$M$正定，
 \end{solution}
-\section{}
+\begin{example}\citeu{wai_1}
+  设 $A$ 为 $n$ 阶实对称正定矩阵，$D$ 为任意 $r \times n$ 实矩阵，则矩阵\[M = A + D^\mathrm{T} D\]是正定矩阵。
+\end{example}
+\begin{solution}
+  由于 $A$ 是 $n$ 阶实对称正定矩阵，因此存在$n$阶可逆矩阵 $C_1$，满足$A = C_1^\mathrm{T} C_1$,
+  所以\[M=C_1^\mathrm{T} C_1 + D^\mathrm{T} D=
+  \begin{pmatrix} C_1^\mathrm{T} & D^\mathrm{T} \end{pmatrix} \begin{pmatrix} C_1 \\ D \end{pmatrix}\]
+  
+  令\[C = \begin{pmatrix} C_1 \\ D \end{pmatrix},\text{其中 $C$ 为 $(n+r) \times n$ 阶实矩阵。}\]
+  
+  则\[M=C^\mathrm{T}C\]
+  
+  下面证明 $C$ 列满秩：任取向量 $X \in \mathbb{R}^n$,则当$CX=0$时，有
+          \[
+          CX=\begin{pmatrix} C_1 \\ D \end{pmatrix}X = 0 \implies C_1 X= 0.
+          \]
+          由 $C_1$ 可逆得 $X=0$，即齐次方程组 $CX=0$ 仅有零解，故
+          \[
+          \operatorname{rank}(C)=n.
+          \]
+
+    综上，$M = C^\mathrm{T} C$ 且 $C$是秩为$n$的列满秩矩阵，因此 $M$ 为正定矩阵。
+\end{solution}
+\section{总结}
+以上~\ref{2_1}到~\ref{2_6}就是高等代数中比较常用的判定方法，然而实际上正定矩阵的证明通常采用多种方法，并不会只采用一种方法。

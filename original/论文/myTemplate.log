@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  27 MAR 2026 19:24
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  29 MAR 2026 01:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1707,17 +1707,21 @@ Overfull \hbox (32.47621pt too wide) in paragraph at lines 227--228
 
 
 ] [8] [9] [10]
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=tex-text;!
+
 Overfull \hbox (42.15004pt too wide) detected at line 251
 [][]
  []
 
-[11]) [12]
+[11]
+Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=tex-text;!
+[12]) [13]
 \openout2 = `wenxian/bibfile.aux'.
 
  (./wenxian/bibfile.tex
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 22.
-) [13
+) [14
 
 
 
@@ -1738,15 +1742,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 6F71BB7B59265D8EDB7F8D2B8FB89DAD;1236.
+(rerunfilecheck)             Checksum: 8B7A9BF7D68992BFE8460E5001256FFF;1417.
  ) 
 Here is how much of TeX's memory you used:
- 36060 strings out of 468167
- 748238 string characters out of 5436503
- 1366514 words of memory out of 5000000
- 63972 multiletter control sequences out of 15000+600000
- 653853 words of font info for 199 fonts, out of 8000000 for 9000
+ 36112 strings out of 468167
+ 750034 string characters out of 5436503
+ 1366513 words of memory out of 5000000
+ 64013 multiletter control sequences out of 15000+600000
+ 656261 words of font info for 211 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,17n,131p,1271b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (14 pages).
+Output written on myTemplate.pdf (15 pages).

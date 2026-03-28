@@ -8,7 +8,7 @@
 %---------------------------------------
 \chapter{正定矩阵及其性质}\label{sec:2two}
 %---------------------------------------
-\section{预备知识}
+\section{正定矩阵的定义及相关引理}
 %\begin{definition} 
 %设$A\in \mathbb{R}^{n\times n}$,若$A=A^T$,对任意的$0\neq x \in \mathbb{R}^{n\times 1}$,的、均有$x^{T}Ax>0$,则称$A$为实对称正定矩阵。
 %\end{definition}
@@ -241,8 +241,8 @@ C^\mathrm{T} A C =
     由引理~\ref{le_2}得二次型$f(x_1,x_2,\cdots,x_n)$是正定的当且仅当~\ref{eq_1}是正定，
     而~\ref{eq_1}是正定的当且仅当$d_i>0(i=1,2,\cdots,n)$，即二次型二次型$f(x_1,x_2,\cdots,x_n)$的正惯性指数等于$n$
 \end{proof}
-\begin{theorem}\citeu{wai_1}
-    设$A$是$n$阶实对称矩阵，则$A$正定的充分必要条件是存在列满秩实矩阵$C$，使得$A=C^\mathrm{T}C$
+\begin{theorem}\citeu{wai_1}\label{theo_6}
+    设$A$是$n$阶实对称矩阵，则$A$正定的充分必要条件是存在秩为$n$的列满秩实矩阵$C$，使得$A=C^\mathrm{T}C$
 \end{theorem}
 \begin{proof}
     必要性：因为$A$是正定矩阵，由定理~\ref{main:1}的~\ref{prop:1_5}，存在可逆矩阵$C$使得$A=C^\mathrm{T}C$，
