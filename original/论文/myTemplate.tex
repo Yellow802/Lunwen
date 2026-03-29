@@ -45,15 +45,15 @@
 % 请用XELATEX编译!
 %====================================================
 \includeonly{preample/coverpage,
-	         %declaration/declare,
-	         %fujian/abstract,
-	         %fujian/zhixie,
+	         declaration/declare,
+	         fujian/abstract,
+	         fujian/zhixie,
 	         %fujian/fulu,
-	         %zhengwen/chaptone,
+	         zhengwen/chaptone,
 	         zhengwen/chapttwo,
 	         zhengwen/chaptthree,
-	         %zhengwen/chaptfour,
-	         %zhengwen/chaptfive,
+	         zhengwen/chaptfour,
+	         zhengwen/chaptfive,
 	         wenxian/bibfile
 }
 %====================================================
@@ -64,31 +64,31 @@
 \include{preample/coverpage}
 \end{titlepage}
 %==================原 创 声 明======================
-%\thispagestyle{empty}%
-%\pagenumbering{roman}%
-%\include{declaration/declare}
+\thispagestyle{empty}%
+\pagenumbering{roman}%
+\include{declaration/declare}
 %====================目 录=========================
 \pagestyle{plain}%
 \tableofcontents
 \newpage
 %=================================================
-%\pagenumbering{arabic} %
-%\setcounter{page}{1}   %
+\pagenumbering{arabic} %
+\setcounter{page}{1}   %
 %====================摘要==========================
-%\include{fujian/abstract.tex}
+\include{fujian/abstract.tex}
 %==================正文开始========================
-%\include{zhengwen/chaptone}
+\include{zhengwen/chaptone}
 \include{zhengwen/chapttwo}
 \include{zhengwen/chaptthree}
-%\include{zhengwen/chaptfour}
-%\include{zhengwen/chaptfive}
+\include{zhengwen/chaptfour}
+\include{zhengwen/chaptfive}
 %==================参考文献========================
 \include{wenxian/bibfile}
 %====================索引==========================
 %\printindex %如不要索引请将此行和下行注释掉
 %\addcontentsline{toc}{chapter}{索引}
 %====================致谢==========================
-%\include{fujian/zhixie}
+\include{fujian/zhixie}
 %====================附录==========================
 %\include{fujian/fulu}%如没有附录，请将这句注释掉
 %==================================================

@@ -320,4 +320,28 @@ M = c_1A_1 + c_2A_2 + \cdots + c_kA_k
     综上，$M = C^\mathrm{T} C$ 且 $C$是秩为$n$的列满秩矩阵，因此 $M$ 为正定矩阵。
 \end{solution}
 \section{总结}
-以上~\ref{2_1}到~\ref{2_6}就是高等代数中比较常用的判定方法，然而实际上正定矩阵的证明通常采用多种方法，并不会只采用一种方法。
+以上~\ref{2_1}到~\ref{2_6}就是高等代数中比较常用的判定方法，然而事实上正定矩阵的证明通常采用多种方法，少有题目只采用一种方法就可以判定出来，
+往往需要综合多种方法来判定。
+
+\begin{example}
+  设$A,B$均为$n$阶实对称正定矩阵，且$AB=BA$，证明$AB$是正定矩阵
+\end{example}
+\begin{solution}
+
+  先证$AB$是对称矩阵，因为$$(AB)^\mathrm{T}=B^\mathrm{T}A^\mathrm{T}=BA=AB$$所以$AB$是对称矩阵。
+
+  由$A,B$均为$n$阶实对称正定矩阵，则存在可逆矩阵$Q,P$使得$A=Q^\mathrm{T}Q,B=P^\mathrm{T}P$,所以$AB=Q^\mathrm{T}(QP^\mathrm{T}P)$.
+
+  由矩阵的性质我们可以得到$Q^\mathrm{T}(QP^\mathrm{T}P)$与$(QP^\mathrm{T}P)Q^\mathrm{T}=(PQ^\mathrm{T})^\mathrm{T}PQ^\mathrm{T}$
+  具有相同的特征值。
+  
+  任取向量 $X \in \mathbb{R}^n$有
+  $$X(PQ^\mathrm{T})^\mathrm{T}PQ^\mathrm{T}X=(PQ^\mathrm{T}X)^\mathrm{T}PQ^\mathrm{T}X\geqslant0$$
+  而$PQ^\mathrm{T}X\neq0$,所以$X(PQ^\mathrm{T})^\mathrm{T}PQ^\mathrm{T}X>0$
+
+  由定义法得$(PQ^\mathrm{T})^\mathrm{T}PQ^\mathrm{T}$正定，则$(PQ^\mathrm{T})^\mathrm{T}PQ^\mathrm{T}$的特征值全大于零,
+  从而$AB=Q^\mathrm{T}(QP^\mathrm{T}P)$的特征值也全大于零，所以$AB$为正定矩阵
+\end{solution}
+在本道例题当中，我们运用到了正定矩阵的合同法将矩阵拆分成可逆矩阵的转置乘积，接着运用定义法证明转置乘积是正定的，最后运用特征值法证明
+目标矩阵是正定的。综合运用了三种判定方法，是一道综合性的题目，由此我们也可以看出，在实际解题运用当中，我们应当灵活的采取判定方法，
+多方面理解题目。

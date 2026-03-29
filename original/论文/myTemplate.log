@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  29 MAR 2026 01:35
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.3.10)  29 MAR 2026 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1426,7 +1426,7 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 
 
 Writing index file myTemplate.idx
-(./myTemplate.aux (./preample/coverpage.aux) (./zhengwen/chapttwo.aux) (./zhengwen/chaptthree.aux) (./wenxian/bibfile.aux))
+(./myTemplate.aux (./preample/coverpage.aux) (./declaration/declare.aux) (./fujian/abstract.aux) (./zhengwen/chaptone.aux) (./zhengwen/chapttwo.aux) (./zhengwen/chaptthree.aux) (./zhengwen/chaptfour.aux) (./zhengwen/chaptfive.aux) (./wenxian/bibfile.aux) (./fujian/zhixie.aux))
 \openout1 = `myTemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1671,22 +1671,82 @@ Package fontspec Info:
 
 
 
+]
+\openout2 = `declaration/declare.aux'.
+
+ (./declaration/declare.tex
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 19.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
+(Font)              size <8> substituted on input line 19.
+
+) [1
+
+
+
 ] (./myTemplate.toc)
 \tf@toc=\write7
 \openout7 = `myTemplate.toc'.
 
- [1
+ [2
+
+
+]
+\openout2 = `fujian/abstract.aux'.
+
+ (./fujian/abstract.tex
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/BI" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "FangSong/I" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FangSong(0)' created for font 'FangSong'
+(fontspec)             with options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
+
+) [1
+
+]
+\openout2 = `zhengwen/chaptone.aux'.
+
+ (./zhengwen/chaptone.tex
+第1章
+) [2
+
+
 
 
 ]
 \openout2 = `zhengwen/chapttwo.aux'.
 
  (./zhengwen/chapttwo.tex
-第1章
-[2
+第2章
+[3
 
 
-] [3] [4]
+
+
+] [4] [5]
 Overfull \hbox (29.26456pt too wide) detected at line 180
 [][][][]\OML/cmm/m/it/12.045 A[][] \OT1/cmr/m/n/12.045 = [] [] [] = []
  []
@@ -1696,39 +1756,78 @@ Overfull \hbox (32.47621pt too wide) in paragraph at lines 227--228
 []\TU/SimSun(0)/m/n/12.045 这 就 是 说\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 矩 阵 $\OML/cmm/m/it/12.045 A$ \TU/SimSun(0)/m/n/12.045 与 单 位 矩 阵 合 同\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 因 此\TU/lmr/m/n/12.045 ,$\OML/cmm/m/it/12.045 A$ \TU/SimSun(0)/m/n/12.045 是 正 定 矩 阵\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 或 者 说\TU/lmr/m/n/12.045 , \TU/SimSun(0)/m/n/12.045 二 次 型 $\OML/cmm/m/it/12.045 f\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 x[]; x[]; []  ; x[]\OT1/cmr/m/n/12.045 )$
  []
 
-[5]) [6]
+[6]) [7]
 \openout2 = `zhengwen/chaptthree.aux'.
 
  (./zhengwen/chaptthree.tex
-第2章
-[7
+第3章
+[8
 
 
 
 
-] [8] [9] [10]
+] [9] [10] [11]
 Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=tex-text;!
 
 Overfull \hbox (42.15004pt too wide) detected at line 251
 [][]
  []
 
-[11]
+[12]
 Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=tex-text;!
-[12]) [13]
+[13] [14]) [15]
+\openout2 = `zhengwen/chaptfour.aux'.
+
+ (./zhengwen/chaptfour.tex
+第4章
+[16
+
+
+
+
+]
+Overfull \hbox (32.18372pt too wide) in paragraph at lines 70--74
+\TU/SimSun(0)/m/n/12.045 其 中 $\OML/cmm/m/it/12.045 A[]$ \TU/SimSun(0)/m/n/12.045 是 $\OML/cmm/m/it/12.045 A$ \TU/SimSun(0)/m/n/12.045 的 左 上 角 $\OML/cmm/m/it/12.045 n \OMS/cmsy/m/n/12.045 ^^@ \OT1/cmr/m/n/12.045 1$ \TU/SimSun(0)/m/n/12.045 阶 子 矩 阵  |（即 $\OML/cmm/m/it/12.045 n \OMS/cmsy/m/n/12.045 ^^@ \OT1/cmr/m/n/12.045 1$ \TU/SimSun(0)/m/n/12.045 阶 顺 序 主 子 阵） ，| $\OML/cmm/m/it/12.045 ^^K \OT1/cmr/m/n/12.045 = (\OML/cmm/m/it/12.045 a[]; a[]; []  ; a[]\OT1/cmr/m/n/12.045 )[]$
+ []
+
+[17] [18]) [19]
+\openout2 = `zhengwen/chaptfive.aux'.
+
+ (./zhengwen/chaptfive.tex
+第5章
+) [20
+
+
+
+
+]
 \openout2 = `wenxian/bibfile.aux'.
 
  (./wenxian/bibfile.tex
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 22.
-) [14
+) [21
+
+
+
+
+]
+\openout2 = `fujian/zhixie.aux'.
+
+ (./fujian/zhixie.tex
+
+Class ctexbook Warning: Command `\CTEXsetup' is deprecated.
+(ctexbook)              \ctexset { chapter = { format+={\flushleft \zihao
+(ctexbook)              {4}\ziju {0}} } } is set.
+
+) [22
 
 
 
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(./myTemplate.aux (./preample/coverpage.aux) (./zhengwen/chapttwo.aux) (./zhengwen/chaptthree.aux) (./wenxian/bibfile.aux))
+(./myTemplate.aux (./preample/coverpage.aux) (./declaration/declare.aux) (./fujian/abstract.aux) (./zhengwen/chaptone.aux) (./zhengwen/chapttwo.aux) (./zhengwen/chaptthree.aux) (./zhengwen/chaptfour.aux) (./zhengwen/chaptfive.aux) (./wenxian/bibfile.aux) (./fujian/zhixie.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
@@ -1742,15 +1841,15 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `myTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 8B7A9BF7D68992BFE8460E5001256FFF;1417.
+(rerunfilecheck)             Checksum: FA5AA9B56A58BD8AC41D8DFA9359C1C5;2546.
  ) 
 Here is how much of TeX's memory you used:
- 36112 strings out of 468167
- 750034 string characters out of 5436503
- 1366513 words of memory out of 5000000
- 64013 multiletter control sequences out of 15000+600000
- 656261 words of font info for 211 fonts, out of 8000000 for 9000
+ 36712 strings out of 468167
+ 779298 string characters out of 5436503
+ 1366514 words of memory out of 5000000
+ 64549 multiletter control sequences out of 15000+600000
+ 662803 words of font info for 248 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 118i,17n,131p,1271b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 118i,17n,131p,1271b,925s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on myTemplate.pdf (15 pages).
+Output written on myTemplate.pdf (25 pages).

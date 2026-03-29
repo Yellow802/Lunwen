@@ -6,21 +6,173 @@
 
 \large\zihao{-4}
 %---------------------------------------
-\chapter{参考文献的引用\index{引用}示例}\label{sec_si4}
+\chapter{正定矩阵的解题应用}\label{sec_si4}
 %---------------------------------------
-按论文中参考文献出现的次序，用中括号的数字连续编号，五号宋体，文献顶格，单倍行距(见例~\ref{li:2})。引用格式按照西南大学学报要求，
-请注意标点符号。
-国内高等院校数学专业常用的两本\citeu{xiong,zhang}《近世代数》是张禾瑞编著的
-《近世代数》\cite{zhang}和熊全淹编著的 《近世代数》\cite{xiong}.
-\begin{example}\label{li:2}
-参考文献中条目排版示例：
-\begin{verbatim}
-[4] 郑霖，柴宗新，郑远昌等.四川省地理[M].四川科学技术出版社，
-    1994.108-111.
-[5] 刘广珠. 高中生考试焦虑成因分析[J].陕西师大学报（哲社版），
-    1995，24（1）：161-164.
-\end{verbatim}
+在高等代数中，正定矩阵对于解决难题扮演着重要的角色。本章主要内容是通过例题来介绍正定矩阵在高等代数解题中的几种应用。
+\section{矩阵分解}
+正定矩阵作为矩阵的一种特殊形式，最直接的应用就是可以将矩阵分解。与正定矩阵相关的矩阵分解定理有很多，下面列举几个作为例子：
+\begin{enumerate}
+    \item 矩阵的极分解：若$A$是一个$n$阶实可逆矩阵，则存在一个正交矩阵$U$和正定矩阵$P$使得$A=PU$且该分解是唯一的;
+    \item \textit{Cholesky}分解：若$A$是$n$阶正定矩阵，则存在一个对角元为正数的上三角矩阵$R$，使得$A=R^\mathrm{T}R$,且该分解是唯一的；
+    \item 若$A$是$n$阶正定矩阵，则存在一个正定矩阵$C$使得$A=C^2$
+\end{enumerate}
+\begin{example}
+    设$A$是$n$阶正定矩阵，证明：$A$的所有顺序主子式均大于零，当且仅当存在唯一的对角元全为1的上三角矩阵$S$和对角元全为正的对角矩阵$D$，
+    使得$A = S^\mathrm{T} D S$。
 \end{example}
-这是一个外文参考文献的引用实例\citeu{experqc}。请注意上面两种引用格式，一种是上标， 一种是正常。使用者可根据自己的喜好选用。
+\begin{solution}
+必要性：若$A$为正定矩阵，则其所有顺序主子式均大于零。
+根据Cholesky分解定理，存在唯一的对角元为正数的上三角矩阵$R$，使得
+$A = R^\mathrm{T}R$
+令对角矩阵
+$$D = \operatorname{diag}(r_{11}^2, r_{22}^2, \cdots, r_{nn}^2), \quad r_{ii}>0,$$
+构造矩阵
+$$S = R \cdot \operatorname{diag}\left(\frac{1}{r_{11}}, \frac{1}{r_{22}}, \cdots, \frac{1}{r_{nn}}\right),$$
+则$S$为对角元全为$1$的上三角矩阵，且$R = S\sqrt{D}$。代入Cholesky分解式得：
+$$
+A = R^\mathrm{T} R = (S\sqrt{D})^\mathrm{T} (S\sqrt{D}) = S^\mathrm{T} D S.
+$$
+故分解$A = S^\mathrm{T} D S$存在。
 
-这是另外一种引用方式~\cite{das}，如果必要也可以这样用。
+下证唯一性：
+
+假设存在两组分解$$A = S_1^\mathrm{T} D_1 S_1 = S_2^\mathrm{T} D_2 S_2,$$
+其中$S_1,S_2$为对角元全为1的上三角矩阵，$D_1,D_2$为对角元全为正的对角矩阵。
+
+整理得$$(S_2^\mathrm{T})^{-1}S_1^\mathrm{T} D_1 = D_2 S_2 S_1^{-1}.$$
+左边是下三角矩阵，右边是上三角矩阵，因此两边均为对角矩阵。
+结合$S_1,S_2$对角元为1，可得$S_1 = S_2$，进而$D_1 = D_2$，分解唯一。
+
+充分性：
+若存在分解$A = S^\mathrm{T} D S$，其中$S$为对角元全为1的上三角矩阵（可逆），$D = \operatorname{diag}(d_1,d_2,\cdots,d_n),d_i>0$。
+对任意非零向量$x \in \mathbb{R}^n$，令$y = Sx$，则$y \neq 0$，且
+$$
+x^\mathrm{T} A x = x^\mathrm{T} S^\mathrm{T} D S x = y^\mathrm{T} D y = \sum_{i=1}^n d_i y_i^2 > 0.
+$$
+故$A$为正定矩阵，其所有顺序主子式均大于零。
+
+综上，命题得证
+\end{solution}
+
+\section{不等式}
+根据正定矩阵的定义，我们可以知道，正定矩阵与不等式有着紧密的联系。关于正定矩阵的不等式有很多，要证明这些不等式就要综合的运用正定矩阵的性质、
+定理、判定方法等。
+\begin{example}\citeu{gaodai_1}
+    设$A=(a_{ij})$是$n$阶正定矩阵，证明：\begin{enumerate}
+        \item $|A|\leqslant a_{nn}H_{n-1}$,$H_{n-1}$是$A$的$n-1$阶顺序主子式
+        \item $|A|\leqslant a_{11}a_{22}\cdots a_{nn}$
+    \end{enumerate}
+\end{example}
+\begin{solution}
+    (1)将矩阵 $A$ 进行分块如下：
+\[
+A = \begin{pmatrix} A_{n-1} & \alpha \\ \alpha^\mathrm{T} & a_{nn} \end{pmatrix}
+\]
+其中 $A_{n-1}$ 是 $A$ 的左上角 $n-1$ 阶子矩阵（即 $n-1$ 阶顺序主子阵），
+$\alpha = (a_{1n}, a_{2n}, \cdots, a_{n-1,n})^\mathrm{T}$ 是列向量。因为 $A$ 是正定矩阵，所以其顺序主子阵 $A_{n-1}$ 也是正定的，
+故 $A_{n-1}$ 可逆，且 $H_{n-1} = \det(A_{n-1}) > 0$。
+
+构造分块初等矩阵 $P$，对 $A$ 作初等变换：
+\[
+P = \begin{pmatrix} E_{n-1} & 0 \\ -\alpha^\mathrm{T} A_{n-1}^{-1} & 1 \end{pmatrix},
+\text{其中 $E_{n-1}$ 为 $n-1$ 阶单位矩阵.}\]
+
+计算 $P^\mathrm{T} A P$：
+\begin{align*}
+P^\mathrm{T} A P &= \begin{pmatrix} E_{n-1} & -A_{n-1}^{-1}\alpha \\ 0 & 1 \end{pmatrix} 
+\begin{pmatrix} A_{n-1} & \alpha \\ \alpha^\mathrm{T} & a_{nn} \end{pmatrix} 
+\begin{pmatrix} E_{n-1} & 0 \\ -\alpha^\mathrm{T} A_{n-1}^{-1} & 1 \end{pmatrix} \\
+&= \begin{pmatrix} A_{n-1} & 0 \\ 0 & a_{nn} - \alpha^\mathrm{T} A_{n-1}^{-1}\alpha \end{pmatrix}
+\end{align*}
+该变换保持行列式的值不变，对两边取行列式：
+\[
+\det(P^\mathrm{T} A P) = \det(A) = \det(A_{n-1}) \cdot (a_{nn} - \alpha^\mathrm{T} A_{n-1}^{-1}\alpha)
+\]
+由于 $A$ 正定，对于任意非零向量 $x$，$x^\mathrm{T} A x > 0$。取 $x = A_{n-1}^{-1}\alpha$，
+可知 $\alpha^\mathrm{T} A_{n-1}^{-1}\alpha > 0$，因此：
+\[
+a_{nn} - \alpha^\mathrm{T} A_{n-1}^{-1}\alpha \le a_{nn}
+\]
+代入行列式公式得：
+\[
+|A| = H_{n-1} \cdot (a_{nn} - \alpha^\mathrm{T} A_{n-1}^{-1}\alpha) \le H_{n-1} \cdot a_{nn}
+\]
+即 $|A| \le a_{nn}H_{n-1}$，(1) 得证。
+
+(2)对$A$的阶数$n$做数学归纳法。
+当 $n=1$ 时，$|A| = a_{11}$，不等式显然成立。
+当 $n=2$ 时，设 $A = \begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{pmatrix}$，则 $|A| = a_{11}a_{22} - a_{12}^2 \le a_{11}a_{22}$，结论成立。
+
+假设对于任意 $n-1$ 阶正定矩阵，结论成立，即 $n-1$ 阶正定矩阵的行列式小于等于其对角元乘积。
+
+对于 $n$ 阶正定矩阵 $A$，由 (1) 的结论可知：
+\[
+|A| \le a_{nn} \cdot |A_{n-1}|
+\]
+其中 $A_{n-1}$ 是 $n-1$ 阶正定矩阵。根据归纳假设：
+\[
+|A_{n-1}| \le a_{11}a_{22}\cdots a_{n-1,n-1}
+\]
+因此：
+\[
+|A| \le a_{nn} \cdot (a_{11}a_{22}\cdots a_{n-1,n-1}) = a_{11}a_{22}\cdots a_{nn}
+\]
+由数学归纳法原理，不等式对任意正整数 $n$ 成立。
+\end{solution}
+
+\section{极值问题}
+在数学分析里，我们知道，当$n$元函数$f$若在$x_0$的某个领邻域里存在二阶偏导数，且$f'(x_0)=0$,则当$f$在$x_0$的黑塞(Hesse)矩阵$f''(x)$
+是正定矩阵时，$f$在$x_0$处取严格极小值。也就是说我们可以用正定矩阵来求取多元函数的极小值。 
+\begin{example}
+    求三元函数
+\[
+f(x,y,z)=x^2 + 2y^2 + z^2 + xy + xz - 3x - 2y - z
+\]
+的极值。
+\end{example}
+\begin{solution}
+
+分别求一阶偏导数，并令其为零：
+\[
+\begin{cases}
+f_x = 2x + y + z - 3 = 0\\
+f_y = x + 4y - 2 = 0\\
+f_z = x + 2z - 1 = 0
+\end{cases},\text{解此方程组，得驻点为}
+\begin{cases}
+    x=\frac{8}{5}\\ y=\frac{1}{10}\\z=-\frac{3}{10}
+\end{cases}
+\]
+
+求二阶偏导数，得Hessian矩阵：
+\[
+H =
+\begin{pmatrix}
+f_{xx} & f_{xy} & f_{xz}\\
+f_{yx} & f_{yy} & f_{yz}\\
+f_{zx} & f_{zy} & f_{zz}
+\end{pmatrix}
+=
+\begin{pmatrix}
+2 & 1 & 1\\
+1 & 4 & 0\\
+1 & 0 & 2
+\end{pmatrix}.
+\]
+
+依次计算各阶顺序主子式：
+\[
+\Delta_1 = 2 > 0,\quad
+\Delta_2 = \begin{vmatrix}2 & 1\\1 & 4\end{vmatrix} = 7 > 0,\quad
+\Delta_3 = \begin{vmatrix}2 & 1 & 1\\1 & 4 & 0\\1 & 0 & 2\end{vmatrix} = 10 > 0.
+\]
+
+故Hessian矩阵 $H$ 为正定矩阵，因此函数 $f(x,y,z)$ 在驻点
+\[
+\left(\frac{8}{5},\frac{1}{10},-\frac{3}{10}\right)
+\]
+处取得极小值。
+\end{solution}
+
+以上只是正定矩阵在部分领域的应用，而正定矩阵的应用是广泛的，多领域的。除了我所提到的三种，正定矩阵在工程，技术领域、在经济金融领域、
+信息技术领域等诸多领域发挥着不可替代的作用。
